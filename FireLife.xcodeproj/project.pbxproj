@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DFEDEE9320E4C4A900D2714A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEDEE9220E4C4A900D2714A /* AppDelegate.m */; };
+		DFEDEE9620E4C4A900D2714A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEDEE9520E4C4A900D2714A /* ViewController.m */; };
+		DFEDEE9920E4C4A900D2714A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFEDEE9720E4C4A900D2714A /* Main.storyboard */; };
+		DFEDEE9B20E4C4AA00D2714A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFEDEE9A20E4C4AA00D2714A /* Assets.xcassets */; };
+		DFEDEE9E20E4C4AA00D2714A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFEDEE9C20E4C4AA00D2714A /* LaunchScreen.storyboard */; };
+		DFEDEEA120E4C4AA00D2714A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEDEEA020E4C4AA00D2714A /* main.m */; };
+		DFEDEEAB20E4C4AB00D2714A /* FireLifeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEDEEAA20E4C4AB00D2714A /* FireLifeTests.m */; };
+		DFEDEEB620E4C4AB00D2714A /* FireLifeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEDEEB520E4C4AB00D2714A /* FireLifeUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DFEDEEA720E4C4AB00D2714A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFEDEE8620E4C4A900D2714A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFEDEE8D20E4C4A900D2714A;
+			remoteInfo = FireLife;
+		};
+		DFEDEEB220E4C4AB00D2714A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFEDEE8620E4C4A900D2714A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFEDEE8D20E4C4A900D2714A;
+			remoteInfo = FireLife;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DFEDEE8E20E4C4A900D2714A /* FireLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFEDEE9120E4C4A900D2714A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DFEDEE9220E4C4A900D2714A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DFEDEE9420E4C4A900D2714A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DFEDEE9520E4C4A900D2714A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DFEDEE9820E4C4A900D2714A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DFEDEE9A20E4C4AA00D2714A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DFEDEE9D20E4C4AA00D2714A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DFEDEE9F20E4C4AA00D2714A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFEDEEA020E4C4AA00D2714A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DFEDEEA620E4C4AB00D2714A /* FireLifeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FireLifeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFEDEEAA20E4C4AB00D2714A /* FireLifeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FireLifeTests.m; sourceTree = "<group>"; };
+		DFEDEEAC20E4C4AB00D2714A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFEDEEB120E4C4AB00D2714A /* FireLifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FireLifeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFEDEEB520E4C4AB00D2714A /* FireLifeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FireLifeUITests.m; sourceTree = "<group>"; };
+		DFEDEEB720E4C4AB00D2714A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DFEDEE8B20E4C4A900D2714A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFEDEEA320E4C4AB00D2714A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFEDEEAE20E4C4AB00D2714A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DFEDEE8520E4C4A900D2714A = {
+			isa = PBXGroup;
+			children = (
+				DFEDEE9020E4C4A900D2714A /* FireLife */,
+				DFEDEEA920E4C4AB00D2714A /* FireLifeTests */,
+				DFEDEEB420E4C4AB00D2714A /* FireLifeUITests */,
+				DFEDEE8F20E4C4A900D2714A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DFEDEE8F20E4C4A900D2714A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DFEDEE8E20E4C4A900D2714A /* FireLife.app */,
+				DFEDEEA620E4C4AB00D2714A /* FireLifeTests.xctest */,
+				DFEDEEB120E4C4AB00D2714A /* FireLifeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DFEDEE9020E4C4A900D2714A /* FireLife */ = {
+			isa = PBXGroup;
+			children = (
+				DFEDEE9120E4C4A900D2714A /* AppDelegate.h */,
+				DFEDEE9220E4C4A900D2714A /* AppDelegate.m */,
+				DFEDEE9420E4C4A900D2714A /* ViewController.h */,
+				DFEDEE9520E4C4A900D2714A /* ViewController.m */,
+				DFEDEE9720E4C4A900D2714A /* Main.storyboard */,
+				DFEDEE9A20E4C4AA00D2714A /* Assets.xcassets */,
+				DFEDEE9C20E4C4AA00D2714A /* LaunchScreen.storyboard */,
+				DFEDEE9F20E4C4AA00D2714A /* Info.plist */,
+				DFEDEEA020E4C4AA00D2714A /* main.m */,
+			);
+			path = FireLife;
+			sourceTree = "<group>";
+		};
+		DFEDEEA920E4C4AB00D2714A /* FireLifeTests */ = {
+			isa = PBXGroup;
+			children = (
+				DFEDEEAA20E4C4AB00D2714A /* FireLifeTests.m */,
+				DFEDEEAC20E4C4AB00D2714A /* Info.plist */,
+			);
+			path = FireLifeTests;
+			sourceTree = "<group>";
+		};
+		DFEDEEB420E4C4AB00D2714A /* FireLifeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DFEDEEB520E4C4AB00D2714A /* FireLifeUITests.m */,
+				DFEDEEB720E4C4AB00D2714A /* Info.plist */,
+			);
+			path = FireLifeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DFEDEE8D20E4C4A900D2714A /* FireLife */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFEDEEBA20E4C4AB00D2714A /* Build configuration list for PBXNativeTarget "FireLife" */;
+			buildPhases = (
+				DFEDEE8A20E4C4A900D2714A /* Sources */,
+				DFEDEE8B20E4C4A900D2714A /* Frameworks */,
+				DFEDEE8C20E4C4A900D2714A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FireLife;
+			productName = FireLife;
+			productReference = DFEDEE8E20E4C4A900D2714A /* FireLife.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DFEDEEA520E4C4AB00D2714A /* FireLifeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFEDEEBD20E4C4AB00D2714A /* Build configuration list for PBXNativeTarget "FireLifeTests" */;
+			buildPhases = (
+				DFEDEEA220E4C4AB00D2714A /* Sources */,
+				DFEDEEA320E4C4AB00D2714A /* Frameworks */,
+				DFEDEEA420E4C4AB00D2714A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFEDEEA820E4C4AB00D2714A /* PBXTargetDependency */,
+			);
+			name = FireLifeTests;
+			productName = FireLifeTests;
+			productReference = DFEDEEA620E4C4AB00D2714A /* FireLifeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DFEDEEB020E4C4AB00D2714A /* FireLifeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFEDEEC020E4C4AB00D2714A /* Build configuration list for PBXNativeTarget "FireLifeUITests" */;
+			buildPhases = (
+				DFEDEEAD20E4C4AB00D2714A /* Sources */,
+				DFEDEEAE20E4C4AB00D2714A /* Frameworks */,
+				DFEDEEAF20E4C4AB00D2714A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFEDEEB320E4C4AB00D2714A /* PBXTargetDependency */,
+			);
+			name = FireLifeUITests;
+			productName = FireLifeUITests;
+			productReference = DFEDEEB120E4C4AB00D2714A /* FireLifeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DFEDEE8620E4C4A900D2714A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = charlie;
+				TargetAttributes = {
+					DFEDEE8D20E4C4A900D2714A = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					DFEDEEA520E4C4AB00D2714A = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = DFEDEE8D20E4C4A900D2714A;
+					};
+					DFEDEEB020E4C4AB00D2714A = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = DFEDEE8D20E4C4A900D2714A;
+					};
+				};
+			};
+			buildConfigurationList = DFEDEE8920E4C4A900D2714A /* Build configuration list for PBXProject "FireLife" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DFEDEE8520E4C4A900D2714A;
+			productRefGroup = DFEDEE8F20E4C4A900D2714A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DFEDEE8D20E4C4A900D2714A /* FireLife */,
+				DFEDEEA520E4C4AB00D2714A /* FireLifeTests */,
+				DFEDEEB020E4C4AB00D2714A /* FireLifeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DFEDEE8C20E4C4A900D2714A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFEDEE9E20E4C4AA00D2714A /* LaunchScreen.storyboard in Resources */,
+				DFEDEE9B20E4C4AA00D2714A /* Assets.xcassets in Resources */,
+				DFEDEE9920E4C4A900D2714A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFEDEEA420E4C4AB00D2714A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFEDEEAF20E4C4AB00D2714A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DFEDEE8A20E4C4A900D2714A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFEDEE9620E4C4A900D2714A /* ViewController.m in Sources */,
+				DFEDEEA120E4C4AA00D2714A /* main.m in Sources */,
+				DFEDEE9320E4C4A900D2714A /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFEDEEA220E4C4AB00D2714A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFEDEEAB20E4C4AB00D2714A /* FireLifeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFEDEEAD20E4C4AB00D2714A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFEDEEB620E4C4AB00D2714A /* FireLifeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DFEDEEA820E4C4AB00D2714A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFEDEE8D20E4C4A900D2714A /* FireLife */;
+			targetProxy = DFEDEEA720E4C4AB00D2714A /* PBXContainerItemProxy */;
+		};
+		DFEDEEB320E4C4AB00D2714A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFEDEE8D20E4C4A900D2714A /* FireLife */;
+			targetProxy = DFEDEEB220E4C4AB00D2714A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DFEDEE9720E4C4A900D2714A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFEDEE9820E4C4A900D2714A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DFEDEE9C20E4C4AA00D2714A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFEDEE9D20E4C4AA00D2714A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DFEDEEB820E4C4AB00D2714A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DFEDEEB920E4C4AB00D2714A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DFEDEEBB20E4C4AB00D2714A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z3L8JB7WBX;
+				INFOPLIST_FILE = FireLife/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.charlie.FireLife;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DFEDEEBC20E4C4AB00D2714A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z3L8JB7WBX;
+				INFOPLIST_FILE = FireLife/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.charlie.FireLife;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DFEDEEBE20E4C4AB00D2714A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z3L8JB7WBX;
+				INFOPLIST_FILE = FireLifeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.charlie.FireLifeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FireLife.app/FireLife";
+			};
+			name = Debug;
+		};
+		DFEDEEBF20E4C4AB00D2714A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z3L8JB7WBX;
+				INFOPLIST_FILE = FireLifeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.charlie.FireLifeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FireLife.app/FireLife";
+			};
+			name = Release;
+		};
+		DFEDEEC120E4C4AB00D2714A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z3L8JB7WBX;
+				INFOPLIST_FILE = FireLifeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.charlie.FireLifeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FireLife;
+			};
+			name = Debug;
+		};
+		DFEDEEC220E4C4AB00D2714A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z3L8JB7WBX;
+				INFOPLIST_FILE = FireLifeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.charlie.FireLifeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FireLife;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DFEDEE8920E4C4A900D2714A /* Build configuration list for PBXProject "FireLife" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFEDEEB820E4C4AB00D2714A /* Debug */,
+				DFEDEEB920E4C4AB00D2714A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFEDEEBA20E4C4AB00D2714A /* Build configuration list for PBXNativeTarget "FireLife" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFEDEEBB20E4C4AB00D2714A /* Debug */,
+				DFEDEEBC20E4C4AB00D2714A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFEDEEBD20E4C4AB00D2714A /* Build configuration list for PBXNativeTarget "FireLifeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFEDEEBE20E4C4AB00D2714A /* Debug */,
+				DFEDEEBF20E4C4AB00D2714A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFEDEEC020E4C4AB00D2714A /* Build configuration list for PBXNativeTarget "FireLifeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFEDEEC120E4C4AB00D2714A /* Debug */,
+				DFEDEEC220E4C4AB00D2714A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DFEDEE8620E4C4A900D2714A /* Project object */;
+}
