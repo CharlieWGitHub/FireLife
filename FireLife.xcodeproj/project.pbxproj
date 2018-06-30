@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		515D54BA35442AD26E1F23B7 /* libPods-FireLife.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD450182052EBF680F633DA4 /* libPods-FireLife.a */; };
+		574EF5198A52B39A58AD224C /* libPods-FireLifeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9639516DE837EE8006A29B73 /* libPods-FireLifeTests.a */; };
+		7633F4D82F4C7EF084E2676B /* libPods-FireLifeUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B70B514A63AEBD260BFD28D /* libPods-FireLifeUITests.a */; };
 		DFEDEE9320E4C4A900D2714A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEDEE9220E4C4A900D2714A /* AppDelegate.m */; };
 		DFEDEE9620E4C4A900D2714A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEDEE9520E4C4A900D2714A /* ViewController.m */; };
 		DFEDEE9920E4C4A900D2714A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFEDEE9720E4C4A900D2714A /* Main.storyboard */; };
@@ -15,6 +18,21 @@
 		DFEDEEA120E4C4AA00D2714A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEDEEA020E4C4AA00D2714A /* main.m */; };
 		DFEDEEAB20E4C4AB00D2714A /* FireLifeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEDEEAA20E4C4AB00D2714A /* FireLifeTests.m */; };
 		DFEDEEB620E4C4AB00D2714A /* FireLifeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEDEEB520E4C4AB00D2714A /* FireLifeUITests.m */; };
+		DFEDEED520E4CE3400D2714A /* FLTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEDEED420E4CE3400D2714A /* FLTabBarViewController.m */; };
+		DFEDEED820E4CE6C00D2714A /* FLTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEDEED720E4CE6C00D2714A /* FLTabBarView.m */; };
+		DFEDEEDB20E4D07A00D2714A /* FLNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEDEEDA20E4D07A00D2714A /* FLNavigationViewController.m */; };
+		DFEDEEDF20E4D66E00D2714A /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEDEEDE20E4D66E00D2714A /* HomePageViewController.m */; };
+		DFEDEEE220E4D68400D2714A /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEDEEE120E4D68400D2714A /* SettingViewController.m */; };
+		DFEDEEE920E4D86B00D2714A /* AdView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEDEEE820E4D86B00D2714A /* AdView.m */; };
+		DFEDEEEB20E4D88500D2714A /* AdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFEDEEEA20E4D88500D2714A /* AdView.xib */; };
+		DFEDEEEE20E4DA7600D2714A /* FLCacheHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEDEEED20E4DA7600D2714A /* FLCacheHelp.m */; };
+		DFEDEEF120E4DB4000D2714A /* FLBaseHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEDEEF020E4DB4000D2714A /* FLBaseHandle.m */; };
+		DFEDEEF420E4DBC900D2714A /* HttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEDEEF320E4DBC900D2714A /* HttpTool.m */; };
+		DFEDEEF920E4E13000D2714A /* FLAdHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEDEEF820E4E13000D2714A /* FLAdHandle.m */; };
+		DFEDEEFE20E4E1B800D2714A /* AdModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEDEEFD20E4E1B800D2714A /* AdModel.m */; };
+		DFEDEF0920E618CE00D2714A /* LiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEDEF0720E618CE00D2714A /* LiveViewController.m */; };
+		DFEDEF0A20E618CE00D2714A /* LiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFEDEF0820E618CE00D2714A /* LiveViewController.xib */; };
+		DFEDEF0D20E61ABF00D2714A /* FLExceptionHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEDEF0C20E61ABF00D2714A /* FLExceptionHandle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +53,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2CEFA28C10A968BCB02E6572 /* Pods-FireLifeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireLifeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FireLifeUITests/Pods-FireLifeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		377E855D4AA3205CA5D732CF /* Pods-FireLifeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireLifeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FireLifeTests/Pods-FireLifeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9632643A10D5129BBAD53B74 /* Pods-FireLifeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireLifeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FireLifeTests/Pods-FireLifeTests.release.xcconfig"; sourceTree = "<group>"; };
+		9639516DE837EE8006A29B73 /* libPods-FireLifeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FireLifeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B70B514A63AEBD260BFD28D /* libPods-FireLifeUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FireLifeUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE85F4663F0B452ABD9ADFA0 /* Pods-FireLifeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireLifeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FireLifeUITests/Pods-FireLifeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C1748C4CCC4CF76D725F1EF0 /* Pods-FireLife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireLife.release.xcconfig"; path = "Pods/Target Support Files/Pods-FireLife/Pods-FireLife.release.xcconfig"; sourceTree = "<group>"; };
+		CD450182052EBF680F633DA4 /* libPods-FireLife.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FireLife.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0DEE4EC0D6DD16B6FB009F0 /* Pods-FireLife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireLife.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FireLife/Pods-FireLife.debug.xcconfig"; sourceTree = "<group>"; };
 		DFEDEE8E20E4C4A900D2714A /* FireLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFEDEE9120E4C4A900D2714A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DFEDEE9220E4C4A900D2714A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +78,36 @@
 		DFEDEEB120E4C4AB00D2714A /* FireLifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FireLifeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFEDEEB520E4C4AB00D2714A /* FireLifeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FireLifeUITests.m; sourceTree = "<group>"; };
 		DFEDEEB720E4C4AB00D2714A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFEDEED320E4CE3400D2714A /* FLTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLTabBarViewController.h; sourceTree = "<group>"; };
+		DFEDEED420E4CE3400D2714A /* FLTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLTabBarViewController.m; sourceTree = "<group>"; };
+		DFEDEED620E4CE6C00D2714A /* FLTabBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLTabBarView.h; sourceTree = "<group>"; };
+		DFEDEED720E4CE6C00D2714A /* FLTabBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLTabBarView.m; sourceTree = "<group>"; };
+		DFEDEED920E4D07A00D2714A /* FLNavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLNavigationViewController.h; sourceTree = "<group>"; };
+		DFEDEEDA20E4D07A00D2714A /* FLNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLNavigationViewController.m; sourceTree = "<group>"; };
+		DFEDEEDC20E4D16300D2714A /* FLHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLHeader.pch; sourceTree = "<group>"; };
+		DFEDEEDD20E4D66E00D2714A /* HomePageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomePageViewController.h; sourceTree = "<group>"; };
+		DFEDEEDE20E4D66E00D2714A /* HomePageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomePageViewController.m; sourceTree = "<group>"; };
+		DFEDEEE020E4D68400D2714A /* SettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		DFEDEEE120E4D68400D2714A /* SettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		DFEDEEE720E4D86B00D2714A /* AdView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdView.h; sourceTree = "<group>"; };
+		DFEDEEE820E4D86B00D2714A /* AdView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdView.m; sourceTree = "<group>"; };
+		DFEDEEEA20E4D88500D2714A /* AdView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdView.xib; sourceTree = "<group>"; };
+		DFEDEEEC20E4DA7600D2714A /* FLCacheHelp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLCacheHelp.h; sourceTree = "<group>"; };
+		DFEDEEED20E4DA7600D2714A /* FLCacheHelp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLCacheHelp.m; sourceTree = "<group>"; };
+		DFEDEEEF20E4DB4000D2714A /* FLBaseHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLBaseHandle.h; sourceTree = "<group>"; };
+		DFEDEEF020E4DB4000D2714A /* FLBaseHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLBaseHandle.m; sourceTree = "<group>"; };
+		DFEDEEF220E4DBC900D2714A /* HttpTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpTool.h; sourceTree = "<group>"; };
+		DFEDEEF320E4DBC900D2714A /* HttpTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HttpTool.m; sourceTree = "<group>"; };
+		DFEDEEF520E4DC3B00D2714A /* APIConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIConfig.h; sourceTree = "<group>"; };
+		DFEDEEF720E4E13000D2714A /* FLAdHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLAdHandle.h; sourceTree = "<group>"; };
+		DFEDEEF820E4E13000D2714A /* FLAdHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLAdHandle.m; sourceTree = "<group>"; };
+		DFEDEEFC20E4E1B800D2714A /* AdModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdModel.h; sourceTree = "<group>"; };
+		DFEDEEFD20E4E1B800D2714A /* AdModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdModel.m; sourceTree = "<group>"; };
+		DFEDEF0620E618CE00D2714A /* LiveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LiveViewController.h; sourceTree = "<group>"; };
+		DFEDEF0720E618CE00D2714A /* LiveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiveViewController.m; sourceTree = "<group>"; };
+		DFEDEF0820E618CE00D2714A /* LiveViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LiveViewController.xib; sourceTree = "<group>"; };
+		DFEDEF0B20E61ABF00D2714A /* FLExceptionHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLExceptionHandle.h; sourceTree = "<group>"; };
+		DFEDEF0C20E61ABF00D2714A /* FLExceptionHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLExceptionHandle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				515D54BA35442AD26E1F23B7 /* libPods-FireLife.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				574EF5198A52B39A58AD224C /* libPods-FireLifeTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7633F4D82F4C7EF084E2676B /* libPods-FireLifeUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +145,8 @@
 				DFEDEEA920E4C4AB00D2714A /* FireLifeTests */,
 				DFEDEEB420E4C4AB00D2714A /* FireLifeUITests */,
 				DFEDEE8F20E4C4A900D2714A /* Products */,
+				ED15DB9D80334DDBA1091137 /* Pods */,
+				FACEDF2355E34B3F67C4E221 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,15 +163,13 @@
 		DFEDEE9020E4C4A900D2714A /* FireLife */ = {
 			isa = PBXGroup;
 			children = (
-				DFEDEE9120E4C4A900D2714A /* AppDelegate.h */,
-				DFEDEE9220E4C4A900D2714A /* AppDelegate.m */,
-				DFEDEE9420E4C4A900D2714A /* ViewController.h */,
-				DFEDEE9520E4C4A900D2714A /* ViewController.m */,
-				DFEDEE9720E4C4A900D2714A /* Main.storyboard */,
-				DFEDEE9A20E4C4AA00D2714A /* Assets.xcassets */,
-				DFEDEE9C20E4C4AA00D2714A /* LaunchScreen.storyboard */,
-				DFEDEE9F20E4C4AA00D2714A /* Info.plist */,
-				DFEDEEA020E4C4AA00D2714A /* main.m */,
+				DFEDEECE20E4CBF400D2714A /* VC */,
+				DFEDEECD20E4CBE400D2714A /* Network */,
+				DFEDEECC20E4CBB200D2714A /* Common */,
+				DFEDEEC920E4C9C400D2714A /* Resource */,
+				DFEDEEC820E4C9B900D2714A /* Other */,
+				DFEDEEC720E4C9AD00D2714A /* Vender */,
+				DFEDEEC320E4C95400D2714A /* Expand */,
 			);
 			path = FireLife;
 			sourceTree = "<group>";
@@ -132,6 +192,221 @@
 			path = FireLifeUITests;
 			sourceTree = "<group>";
 		};
+		DFEDEEC320E4C95400D2714A /* Expand */ = {
+			isa = PBXGroup;
+			children = (
+				DFEDEEC620E4C98D00D2714A /* Macros */,
+				DFEDEEC520E4C98400D2714A /* Tool */,
+				DFEDEEC420E4C97300D2714A /* Category */,
+			);
+			path = Expand;
+			sourceTree = "<group>";
+		};
+		DFEDEEC420E4C97300D2714A /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		DFEDEEC520E4C98400D2714A /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				DFEDEEEC20E4DA7600D2714A /* FLCacheHelp.h */,
+				DFEDEEED20E4DA7600D2714A /* FLCacheHelp.m */,
+				DFEDEEEF20E4DB4000D2714A /* FLBaseHandle.h */,
+				DFEDEEF020E4DB4000D2714A /* FLBaseHandle.m */,
+				DFEDEF0B20E61ABF00D2714A /* FLExceptionHandle.h */,
+				DFEDEF0C20E61ABF00D2714A /* FLExceptionHandle.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		DFEDEEC620E4C98D00D2714A /* Macros */ = {
+			isa = PBXGroup;
+			children = (
+				DFEDEEDC20E4D16300D2714A /* FLHeader.pch */,
+			);
+			path = Macros;
+			sourceTree = "<group>";
+		};
+		DFEDEEC720E4C9AD00D2714A /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vender;
+			sourceTree = "<group>";
+		};
+		DFEDEEC820E4C9B900D2714A /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				DFEDEE9120E4C4A900D2714A /* AppDelegate.h */,
+				DFEDEE9220E4C4A900D2714A /* AppDelegate.m */,
+				DFEDEE9420E4C4A900D2714A /* ViewController.h */,
+				DFEDEE9520E4C4A900D2714A /* ViewController.m */,
+				DFEDEEA020E4C4AA00D2714A /* main.m */,
+				DFEDEE9720E4C4A900D2714A /* Main.storyboard */,
+				DFEDEE9A20E4C4AA00D2714A /* Assets.xcassets */,
+				DFEDEE9C20E4C4AA00D2714A /* LaunchScreen.storyboard */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		DFEDEEC920E4C9C400D2714A /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				DFEDEECB20E4CA2500D2714A /* Image */,
+				DFEDEECA20E4CA1D00D2714A /* Plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		DFEDEECA20E4CA1D00D2714A /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				DFEDEE9F20E4C4AA00D2714A /* Info.plist */,
+			);
+			path = Plist;
+			sourceTree = "<group>";
+		};
+		DFEDEECB20E4CA2500D2714A /* Image */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		DFEDEECC20E4CBB200D2714A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DFEDEED220E4CC9300D2714A /* Tabbar */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		DFEDEECD20E4CBE400D2714A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DFEDEEF220E4DBC900D2714A /* HttpTool.h */,
+				DFEDEEF320E4DBC900D2714A /* HttpTool.m */,
+				DFEDEEF520E4DC3B00D2714A /* APIConfig.h */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		DFEDEECE20E4CBF400D2714A /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				DFEDEEF620E4E10C00D2714A /* Handle */,
+				DFEDEEE620E4D81700D2714A /* Ad */,
+				DFEDEED120E4CC4500D2714A /* Live */,
+				DFEDEED020E4CC1A00D2714A /* Setting */,
+				DFEDEECF20E4CC0E00D2714A /* HomePage */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		DFEDEECF20E4CC0E00D2714A /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				DFEDEEDD20E4D66E00D2714A /* HomePageViewController.h */,
+				DFEDEEDE20E4D66E00D2714A /* HomePageViewController.m */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		DFEDEED020E4CC1A00D2714A /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				DFEDEEE020E4D68400D2714A /* SettingViewController.h */,
+				DFEDEEE120E4D68400D2714A /* SettingViewController.m */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		DFEDEED120E4CC4500D2714A /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				DFEDEF0620E618CE00D2714A /* LiveViewController.h */,
+				DFEDEF0720E618CE00D2714A /* LiveViewController.m */,
+				DFEDEF0820E618CE00D2714A /* LiveViewController.xib */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		DFEDEED220E4CC9300D2714A /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				DFEDEED320E4CE3400D2714A /* FLTabBarViewController.h */,
+				DFEDEED420E4CE3400D2714A /* FLTabBarViewController.m */,
+				DFEDEED620E4CE6C00D2714A /* FLTabBarView.h */,
+				DFEDEED720E4CE6C00D2714A /* FLTabBarView.m */,
+				DFEDEED920E4D07A00D2714A /* FLNavigationViewController.h */,
+				DFEDEEDA20E4D07A00D2714A /* FLNavigationViewController.m */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		DFEDEEE620E4D81700D2714A /* Ad */ = {
+			isa = PBXGroup;
+			children = (
+				DFEDEEFB20E4E19300D2714A /* AdView */,
+				DFEDEEFA20E4E18700D2714A /* AdModel */,
+			);
+			path = Ad;
+			sourceTree = "<group>";
+		};
+		DFEDEEF620E4E10C00D2714A /* Handle */ = {
+			isa = PBXGroup;
+			children = (
+				DFEDEEF720E4E13000D2714A /* FLAdHandle.h */,
+				DFEDEEF820E4E13000D2714A /* FLAdHandle.m */,
+			);
+			path = Handle;
+			sourceTree = "<group>";
+		};
+		DFEDEEFA20E4E18700D2714A /* AdModel */ = {
+			isa = PBXGroup;
+			children = (
+				DFEDEEFC20E4E1B800D2714A /* AdModel.h */,
+				DFEDEEFD20E4E1B800D2714A /* AdModel.m */,
+			);
+			path = AdModel;
+			sourceTree = "<group>";
+		};
+		DFEDEEFB20E4E19300D2714A /* AdView */ = {
+			isa = PBXGroup;
+			children = (
+				DFEDEEE720E4D86B00D2714A /* AdView.h */,
+				DFEDEEE820E4D86B00D2714A /* AdView.m */,
+				DFEDEEEA20E4D88500D2714A /* AdView.xib */,
+			);
+			path = AdView;
+			sourceTree = "<group>";
+		};
+		ED15DB9D80334DDBA1091137 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D0DEE4EC0D6DD16B6FB009F0 /* Pods-FireLife.debug.xcconfig */,
+				C1748C4CCC4CF76D725F1EF0 /* Pods-FireLife.release.xcconfig */,
+				377E855D4AA3205CA5D732CF /* Pods-FireLifeTests.debug.xcconfig */,
+				9632643A10D5129BBAD53B74 /* Pods-FireLifeTests.release.xcconfig */,
+				BE85F4663F0B452ABD9ADFA0 /* Pods-FireLifeUITests.debug.xcconfig */,
+				2CEFA28C10A968BCB02E6572 /* Pods-FireLifeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FACEDF2355E34B3F67C4E221 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD450182052EBF680F633DA4 /* libPods-FireLife.a */,
+				9639516DE837EE8006A29B73 /* libPods-FireLifeTests.a */,
+				9B70B514A63AEBD260BFD28D /* libPods-FireLifeUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,6 +414,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DFEDEEBA20E4C4AB00D2714A /* Build configuration list for PBXNativeTarget "FireLife" */;
 			buildPhases = (
+				CD6E08CDB5FF9CA9855EC755 /* [CP] Check Pods Manifest.lock */,
 				DFEDEE8A20E4C4A900D2714A /* Sources */,
 				DFEDEE8B20E4C4A900D2714A /* Frameworks */,
 				DFEDEE8C20E4C4A900D2714A /* Resources */,
@@ -156,6 +432,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DFEDEEBD20E4C4AB00D2714A /* Build configuration list for PBXNativeTarget "FireLifeTests" */;
 			buildPhases = (
+				A31838ACB272247563002988 /* [CP] Check Pods Manifest.lock */,
 				DFEDEEA220E4C4AB00D2714A /* Sources */,
 				DFEDEEA320E4C4AB00D2714A /* Frameworks */,
 				DFEDEEA420E4C4AB00D2714A /* Resources */,
@@ -174,6 +451,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DFEDEEC020E4C4AB00D2714A /* Build configuration list for PBXNativeTarget "FireLifeUITests" */;
 			buildPhases = (
+				21F94088595C3093C7292C8A /* [CP] Check Pods Manifest.lock */,
 				DFEDEEAD20E4C4AB00D2714A /* Sources */,
 				DFEDEEAE20E4C4AB00D2714A /* Frameworks */,
 				DFEDEEAF20E4C4AB00D2714A /* Resources */,
@@ -238,6 +516,8 @@
 				DFEDEE9E20E4C4AA00D2714A /* LaunchScreen.storyboard in Resources */,
 				DFEDEE9B20E4C4AA00D2714A /* Assets.xcassets in Resources */,
 				DFEDEE9920E4C4A900D2714A /* Main.storyboard in Resources */,
+				DFEDEF0A20E618CE00D2714A /* LiveViewController.xib in Resources */,
+				DFEDEEEB20E4D88500D2714A /* AdView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,14 +537,84 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		21F94088595C3093C7292C8A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FireLifeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A31838ACB272247563002988 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FireLifeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD6E08CDB5FF9CA9855EC755 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FireLife-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DFEDEE8A20E4C4A900D2714A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFEDEF0920E618CE00D2714A /* LiveViewController.m in Sources */,
+				DFEDEEFE20E4E1B800D2714A /* AdModel.m in Sources */,
+				DFEDEED820E4CE6C00D2714A /* FLTabBarView.m in Sources */,
+				DFEDEED520E4CE3400D2714A /* FLTabBarViewController.m in Sources */,
 				DFEDEE9620E4C4A900D2714A /* ViewController.m in Sources */,
 				DFEDEEA120E4C4AA00D2714A /* main.m in Sources */,
+				DFEDEEDF20E4D66E00D2714A /* HomePageViewController.m in Sources */,
+				DFEDEEF420E4DBC900D2714A /* HttpTool.m in Sources */,
+				DFEDEEDB20E4D07A00D2714A /* FLNavigationViewController.m in Sources */,
+				DFEDEEEE20E4DA7600D2714A /* FLCacheHelp.m in Sources */,
 				DFEDEE9320E4C4A900D2714A /* AppDelegate.m in Sources */,
+				DFEDEF0D20E61ABF00D2714A /* FLExceptionHandle.m in Sources */,
+				DFEDEEF920E4E13000D2714A /* FLAdHandle.m in Sources */,
+				DFEDEEE220E4D68400D2714A /* SettingViewController.m in Sources */,
+				DFEDEEF120E4DB4000D2714A /* FLBaseHandle.m in Sources */,
+				DFEDEEE920E4D86B00D2714A /* AdView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,11 +781,13 @@
 		};
 		DFEDEEBB20E4C4AB00D2714A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0DEE4EC0D6DD16B6FB009F0 /* Pods-FireLife.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z3L8JB7WBX;
-				INFOPLIST_FILE = FireLife/Info.plist;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/FireLife/Expand/Macros/FLHeader.pch";
+				INFOPLIST_FILE = FireLife/Resource/Plist/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -448,11 +800,13 @@
 		};
 		DFEDEEBC20E4C4AB00D2714A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1748C4CCC4CF76D725F1EF0 /* Pods-FireLife.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z3L8JB7WBX;
-				INFOPLIST_FILE = FireLife/Info.plist;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/FireLife/Expand/Macros/FLHeader.pch";
+				INFOPLIST_FILE = FireLife/Resource/Plist/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -465,6 +819,7 @@
 		};
 		DFEDEEBE20E4C4AB00D2714A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 377E855D4AA3205CA5D732CF /* Pods-FireLifeTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -484,6 +839,7 @@
 		};
 		DFEDEEBF20E4C4AB00D2714A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9632643A10D5129BBAD53B74 /* Pods-FireLifeTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -503,6 +859,7 @@
 		};
 		DFEDEEC120E4C4AB00D2714A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE85F4663F0B452ABD9ADFA0 /* Pods-FireLifeUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z3L8JB7WBX;
@@ -521,6 +878,7 @@
 		};
 		DFEDEEC220E4C4AB00D2714A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CEFA28C10A968BCB02E6572 /* Pods-FireLifeUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z3L8JB7WBX;

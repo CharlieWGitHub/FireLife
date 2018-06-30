@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "FLTabBarViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +17,14 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    FLTabBarViewController * main = [[FLTabBarViewController alloc]init];
+    self.window.rootViewController = main;
+    [self.window makeKeyAndVisible];
+    
+    
+    
+    
     // Override point for customization after application launch.
     return YES;
 }
