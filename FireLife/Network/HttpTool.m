@@ -8,7 +8,6 @@
 
 #import "HttpTool.h"
 #import <AFNetworking.h>
-#define SERVER_HOST @"http://service.ingkee.com"
 
 static NSString * kBaseUrl = SERVER_HOST;
 @interface AFHttpClient : AFHTTPSessionManager
@@ -68,6 +67,7 @@ static NSString * kBaseUrl = SERVER_HOST;
              failure:(HttpFailureBlock)failure {
     //获取完整的url路径
     NSString * url = [kBaseUrl stringByAppendingPathComponent:path];
+    NSLog(@"url=%@",url);
     [[AFHttpClient sharedClient] POST:url parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         success(responseObject);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {

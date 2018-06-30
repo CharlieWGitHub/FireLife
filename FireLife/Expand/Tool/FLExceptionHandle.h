@@ -10,11 +10,11 @@
 #import <UIKit/UIKit.h>
 
 @interface FLExceptionHandle : NSObject
-{
-    BOOL dismissed;
-}
-void HandleException(NSException *exception);
-void SignalHandler(int signal);
-void InstallUncaughtExceptionHandler(void);
+//{
+//    BOOL dismissed;
+//}
+//void HandleException(NSException *exception);
+//void SignalHandler(int signal);
+//void InstallUncaughtExceptionHandler(void);
 
 @end

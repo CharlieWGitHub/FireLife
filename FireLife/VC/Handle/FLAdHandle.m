@@ -23,7 +23,20 @@
         }
     } failure:^(NSError *error) {
         failed(error);
-        
+
     }];
+    
+//    [HttpTool postWithPath:API_AD params:nil success:^(id json) {
+//        NSLog(@"广告的：%@",json);
+//        if ([json[@"dm_error"] integerValue]) {
+//            failed(json[@"error_msg"]);
+//        } else {
+//            AdModel * model = [AdModel mj_objectWithKeyValues:json[@"resources"][0]];
+//            success(model);
+//        }
+//    } failure:^(NSError *error) {
+//          failed(error);
+//    }];
+    
 }
 @end

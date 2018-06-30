@@ -10,9 +10,9 @@
 #define APIConfig_h
 
 //信息类地址
-#define SERVER_HOST @"http://service.ingkee.com"
+#define SERVER_HOST @"https://service.ingkee.com"
 
-#define API_AD @"advertise/get"
+#define API_AD @"advertise/post"
 
 
 #endif /* APIConfig_h */

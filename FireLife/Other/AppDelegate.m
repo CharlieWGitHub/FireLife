@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "FLTabBarViewController.h"
+#import "AdView.h"
 
 @interface AppDelegate ()
 
@@ -22,7 +23,8 @@
     self.window.rootViewController = main;
     [self.window makeKeyAndVisible];
     
-    
+    AdView * view = [AdView loadAdvertiseView];
+    [self.window addSubview:view];
     
     
     // Override point for customization after application launch.

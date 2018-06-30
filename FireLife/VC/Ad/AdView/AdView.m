@@ -27,46 +27,44 @@
     [super awakeFromNib];
     self.frame = [UIScreen mainScreen].bounds;
     //展示广告
-//    [self showAD];
+    [self showAD];
     //下载广告
-//    [self loadAD];
+    [self loadAD];
     //倒计时
-//    [self startTime];
+    [self startTime];
 }
 
 - (void)showAD{
     //展示
-//    NSString * filename = [FLCacheHelp getAdvertise];
-//    NSString * filePath = [NSString stringWithFormat:@"%@",filename];
-/*
+    NSString * filename = [FLCacheHelp getAdvertise];
+    NSString * filePath = [NSString stringWithFormat:@"%@",filename];
     //查看本地的缓存里面是否是有
     UIImage * lastCacheImage = [[SDWebImageManager sharedManager].imageCache imageFromDiskCacheForKey:filePath];
     
     if (lastCacheImage) {
-        self.backView.image = lastCacheImage;
+        self.adImageView.image = lastCacheImage;
         NSLog(@"111");
     } else {
         NSLog(@"222");
         self.hidden = YES;
     }
- */
 }
 
 - (void)loadAD{
  
-//    [FLAdHandle executeGetAdvertiseTaskWithSuccess:^(id obj) {
-//        AdModel * ad = obj;
-//        NSURL * imageUrl = [NSURL URLWithString:[NSString stringWithFormat:@"%@",ad.image]];
-        // SDWebImageAvoidAutoSetImage  下载之后不赋值
-//        [[[SDWebImageManager sharedManager] imageDownloader]downloadImageWithURL:imageUrl options:SDWebImageDownloaderProgressiveDownload progress:nil completed:^(UIImage * _Nullable image, NSData * _Nullable data, NSError * _Nullable error, BOOL finished) {
-//            NSLog(@"下载成功");
-////           保存本地
-//            [FLCacheHelp setAdvertise:ad.image];
-//        }];
-//
-//    } Failed:^(id obj) {
-//        NSLog(@"失败：%@",obj);
-//    }];
+    [FLAdHandle executeGetAdvertiseTaskWithSuccess:^(id obj) {
+        AdModel * ad = obj;
+        NSURL * imageUrl = [NSURL URLWithString:[NSString stringWithFormat:@"%@",ad.image]];
+//         SDWebImageAvoidAutoSetImage  下载之后不赋值
+        [[[SDWebImageManager sharedManager] imageDownloader]downloadImageWithURL:imageUrl options:SDWebImageDownloaderProgressiveDownload progress:nil completed:^(UIImage * _Nullable image, NSData * _Nullable data, NSError * _Nullable error, BOOL finished) {
+            NSLog(@"下载成功");
+//           保存本地
+            [FLCacheHelp setAdvertise:ad.image];
+        }];
+
+    } Failed:^(id obj) {
+        NSLog(@"失败：%@",obj);
+    }];
   
 }
 - (void)startTime{
