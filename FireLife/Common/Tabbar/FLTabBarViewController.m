@@ -36,14 +36,10 @@
     // Do any additional setup after loading the view.
 }
 - (void)makeVC{
-    
     NSMutableArray * array = [NSMutableArray arrayWithArray:@[@"HomePageViewController",@"SettingViewController"]];
-    NSArray * titleArr = @[@"首页",@"个人中心"];
     for (NSInteger i =0; i<array.count; i++) {
         NSString  * vcName = array[i];
-        
         UIViewController * vc = [[NSClassFromString(vcName) alloc]init];
-        vc.navigationItem.title = titleArr[i];
         vc.view.backgroundColor = [UIColor whiteColor];
         FLNavigationViewController * nav = [[FLNavigationViewController alloc]initWithRootViewController:vc];
         //转变array 里的内容
@@ -55,7 +51,7 @@
 }
 - (void)tababr:(FLTabBarView *)tabbar clickButton:(CLItemType)index {
     if (index !=CLItemTypeLive) {
-        self.selectedIndex = index - CLItemTypeLive;
+        self.selectedIndex = index - CLItemTypeHomePage;
         return;
     }
     //莫泰视图
