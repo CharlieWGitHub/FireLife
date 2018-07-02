@@ -16,6 +16,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    //背景色
+    self.navigationBar.barTintColor = [UIColor whiteColor];
+    //修改UIBarButtonItem 图片 title颜色
+//    self.navigationBar.tintColor = [UIColor greenColor];
+    //是否半透明 当为YES时 设置的导航栏背景颜色会和实际rgb值有误差
+    self.navigationBar.translucent = YES;
+    UIColor * color = [UIColor orangeColor];
+    NSDictionary* dict=[NSDictionary dictionaryWithObject:color forKey:NSForegroundColorAttributeName];
+    self.navigationBar.titleTextAttributes= dict;
+    
     // Do any additional setup after loading the view.
 }
 

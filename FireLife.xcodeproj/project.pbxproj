@@ -10,6 +10,11 @@
 		515D54BA35442AD26E1F23B7 /* libPods-FireLife.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD450182052EBF680F633DA4 /* libPods-FireLife.a */; };
 		574EF5198A52B39A58AD224C /* libPods-FireLifeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9639516DE837EE8006A29B73 /* libPods-FireLifeTests.a */; };
 		7633F4D82F4C7EF084E2676B /* libPods-FireLifeUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B70B514A63AEBD260BFD28D /* libPods-FireLifeUITests.a */; };
+		DFE2EFDC20EA0D570098D51C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE2EFDA20EA0D570098D51C /* LoginViewController.m */; };
+		DFE2EFDD20EA0D570098D51C /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFE2EFDB20EA0D570098D51C /* LoginViewController.xib */; };
+		DFE2EFDF20EA0E1F0098D51C /* loginBg.png in Resources */ = {isa = PBXBuildFile; fileRef = DFE2EFDE20EA0E1F0098D51C /* loginBg.png */; };
+		DFE2EFE320EA1DDB0098D51C /* UserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE2EFE220EA1DDB0098D51C /* UserManager.m */; };
+		DFE2EFE620EA20A80098D51C /* UserManagerTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE2EFE520EA20A80098D51C /* UserManagerTool.m */; };
 		DFEDEE9320E4C4A900D2714A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEDEE9220E4C4A900D2714A /* AppDelegate.m */; };
 		DFEDEE9620E4C4A900D2714A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEDEE9520E4C4A900D2714A /* ViewController.m */; };
 		DFEDEE9920E4C4A900D2714A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFEDEE9720E4C4A900D2714A /* Main.storyboard */; };
@@ -62,6 +67,14 @@
 		C1748C4CCC4CF76D725F1EF0 /* Pods-FireLife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireLife.release.xcconfig"; path = "Pods/Target Support Files/Pods-FireLife/Pods-FireLife.release.xcconfig"; sourceTree = "<group>"; };
 		CD450182052EBF680F633DA4 /* libPods-FireLife.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FireLife.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0DEE4EC0D6DD16B6FB009F0 /* Pods-FireLife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireLife.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FireLife/Pods-FireLife.debug.xcconfig"; sourceTree = "<group>"; };
+		DFE2EFD920EA0D570098D51C /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		DFE2EFDA20EA0D570098D51C /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		DFE2EFDB20EA0D570098D51C /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		DFE2EFDE20EA0E1F0098D51C /* loginBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginBg.png; sourceTree = "<group>"; };
+		DFE2EFE120EA1DDB0098D51C /* UserManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserManager.h; sourceTree = "<group>"; };
+		DFE2EFE220EA1DDB0098D51C /* UserManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserManager.m; sourceTree = "<group>"; };
+		DFE2EFE420EA20A80098D51C /* UserManagerTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserManagerTool.h; sourceTree = "<group>"; };
+		DFE2EFE520EA20A80098D51C /* UserManagerTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserManagerTool.m; sourceTree = "<group>"; };
 		DFEDEE8E20E4C4A900D2714A /* FireLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFEDEE9120E4C4A900D2714A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DFEDEE9220E4C4A900D2714A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -141,8 +154,31 @@
 		DFE2EFD120E9D3CA0098D51C /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				DFE2EFE720EA21510098D51C /* UserManager */,
+				DFE2EFE020EA1D980098D51C /* viewController */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		DFE2EFE020EA1D980098D51C /* viewController */ = {
+			isa = PBXGroup;
+			children = (
+				DFE2EFD920EA0D570098D51C /* LoginViewController.h */,
+				DFE2EFDA20EA0D570098D51C /* LoginViewController.m */,
+				DFE2EFDB20EA0D570098D51C /* LoginViewController.xib */,
+			);
+			path = viewController;
+			sourceTree = "<group>";
+		};
+		DFE2EFE720EA21510098D51C /* UserManager */ = {
+			isa = PBXGroup;
+			children = (
+				DFE2EFE120EA1DDB0098D51C /* UserManager.h */,
+				DFE2EFE220EA1DDB0098D51C /* UserManager.m */,
+				DFE2EFE420EA20A80098D51C /* UserManagerTool.h */,
+				DFE2EFE520EA20A80098D51C /* UserManagerTool.m */,
+			);
+			path = UserManager;
 			sourceTree = "<group>";
 		};
 		DFEDEE8520E4C4A900D2714A = {
@@ -279,6 +315,7 @@
 		DFEDEECB20E4CA2500D2714A /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				DFE2EFDE20EA0E1F0098D51C /* loginBg.png */,
 			);
 			path = Image;
 			sourceTree = "<group>";
@@ -521,8 +558,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFE2EFDD20EA0D570098D51C /* LoginViewController.xib in Resources */,
 				DFEDEE9E20E4C4AA00D2714A /* LaunchScreen.storyboard in Resources */,
 				DFEDEE9B20E4C4AA00D2714A /* Assets.xcassets in Resources */,
+				DFE2EFDF20EA0E1F0098D51C /* loginBg.png in Resources */,
 				DFEDEE9920E4C4A900D2714A /* Main.storyboard in Resources */,
 				DFEDEF0A20E618CE00D2714A /* LiveViewController.xib in Resources */,
 				DFEDEEEB20E4D88500D2714A /* AdView.xib in Resources */,
@@ -608,14 +647,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFEDEF0920E618CE00D2714A /* LiveViewController.m in Sources */,
+				DFE2EFE620EA20A80098D51C /* UserManagerTool.m in Sources */,
 				DFEDEEFE20E4E1B800D2714A /* AdModel.m in Sources */,
 				DFEDEED820E4CE6C00D2714A /* FLTabBarView.m in Sources */,
 				DFEDEED520E4CE3400D2714A /* FLTabBarViewController.m in Sources */,
 				DFEDEE9620E4C4A900D2714A /* ViewController.m in Sources */,
 				DFEDEEA120E4C4AA00D2714A /* main.m in Sources */,
 				DFEDEEDF20E4D66E00D2714A /* HomePageViewController.m in Sources */,
+				DFE2EFDC20EA0D570098D51C /* LoginViewController.m in Sources */,
 				DFEDEEF420E4DBC900D2714A /* HttpTool.m in Sources */,
 				DFEDEEDB20E4D07A00D2714A /* FLNavigationViewController.m in Sources */,
+				DFE2EFE320EA1DDB0098D51C /* UserManager.m in Sources */,
 				DFEDEEEE20E4DA7600D2714A /* FLCacheHelp.m in Sources */,
 				DFEDEE9320E4C4A900D2714A /* AppDelegate.m in Sources */,
 				DFEDEF0D20E61ABF00D2714A /* FLExceptionHandle.m in Sources */,
