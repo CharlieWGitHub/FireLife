@@ -27,7 +27,6 @@
     [self.window addSubview:view];
     
     if (userManager) {
-        
         FLTabBarViewController * main = [[FLTabBarViewController alloc]init];
         self.window.rootViewController = main;
         [self.window makeKeyAndVisible];

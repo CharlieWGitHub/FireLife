@@ -11,7 +11,6 @@
 
 //信息类地址
 #define SERVER_HOST @"https://service.ingkee.com"
-
 #define API_AD @"advertise/post"
 
 

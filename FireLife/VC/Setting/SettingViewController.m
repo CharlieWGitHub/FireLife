@@ -7,6 +7,8 @@
 //
 
 #import "SettingViewController.h"
+#import "UserManagerTool.h"
+#import "TestManagerConfig.h"
 
 @interface SettingViewController ()
 
@@ -17,9 +19,25 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"设置";
-    
-    
+    [self creatLeft];
+    [self addTap];
     // Do any additional setup after loading the view.
+}
+- (void)creatLeft{
+     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"退出登录" style:UIBarButtonItemStylePlain target:self action:@selector(leftBarButtonItemClicked)];
+}
+- (void)addTap{
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(doTapChange:)];
+    tap.numberOfTapsRequired = 6;
+    [self.view addGestureRecognizer:tap];
+
+}
+- (void)doTapChange:(UITapGestureRecognizer*)tap{
+    [TestManagerConfig setupTestManager];
+    
+}
+- (void)leftBarButtonItemClicked{
+    [UserManagerTool removeUserManager];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -15,6 +15,8 @@
 		DFE2EFDF20EA0E1F0098D51C /* loginBg.png in Resources */ = {isa = PBXBuildFile; fileRef = DFE2EFDE20EA0E1F0098D51C /* loginBg.png */; };
 		DFE2EFE320EA1DDB0098D51C /* UserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE2EFE220EA1DDB0098D51C /* UserManager.m */; };
 		DFE2EFE620EA20A80098D51C /* UserManagerTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE2EFE520EA20A80098D51C /* UserManagerTool.m */; };
+		DFE2EFEB20EDF6A40098D51C /* TestManagerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE2EFEA20EDF6A40098D51C /* TestManagerConfig.m */; };
+		DFE2EFF220F0CBAE0098D51C /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE2EFF120F0CBAE0098D51C /* UIColor+Extension.m */; };
 		DFEDEE9320E4C4A900D2714A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEDEE9220E4C4A900D2714A /* AppDelegate.m */; };
 		DFEDEE9620E4C4A900D2714A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEDEE9520E4C4A900D2714A /* ViewController.m */; };
 		DFEDEE9920E4C4A900D2714A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFEDEE9720E4C4A900D2714A /* Main.storyboard */; };
@@ -75,6 +77,10 @@
 		DFE2EFE220EA1DDB0098D51C /* UserManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserManager.m; sourceTree = "<group>"; };
 		DFE2EFE420EA20A80098D51C /* UserManagerTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserManagerTool.h; sourceTree = "<group>"; };
 		DFE2EFE520EA20A80098D51C /* UserManagerTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserManagerTool.m; sourceTree = "<group>"; };
+		DFE2EFE920EDF6A40098D51C /* TestManagerConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestManagerConfig.h; sourceTree = "<group>"; };
+		DFE2EFEA20EDF6A40098D51C /* TestManagerConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestManagerConfig.m; sourceTree = "<group>"; };
+		DFE2EFF020F0CBAE0098D51C /* UIColor+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
+		DFE2EFF120F0CBAE0098D51C /* UIColor+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
 		DFEDEE8E20E4C4A900D2714A /* FireLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFEDEE9120E4C4A900D2714A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DFEDEE9220E4C4A900D2714A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -181,6 +187,15 @@
 			path = UserManager;
 			sourceTree = "<group>";
 		};
+		DFE2EFE820EDF31F0098D51C /* SuperManager */ = {
+			isa = PBXGroup;
+			children = (
+				DFE2EFE920EDF6A40098D51C /* TestManagerConfig.h */,
+				DFE2EFEA20EDF6A40098D51C /* TestManagerConfig.m */,
+			);
+			path = SuperManager;
+			sourceTree = "<group>";
+		};
 		DFEDEE8520E4C4A900D2714A = {
 			isa = PBXGroup;
 			children = (
@@ -248,6 +263,8 @@
 		DFEDEEC420E4C97300D2714A /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				DFE2EFF020F0CBAE0098D51C /* UIColor+Extension.h */,
+				DFE2EFF120F0CBAE0098D51C /* UIColor+Extension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -341,6 +358,7 @@
 		DFEDEECE20E4CBF400D2714A /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				DFE2EFE820EDF31F0098D51C /* SuperManager */,
 				DFE2EFD120E9D3CA0098D51C /* Login */,
 				DFEDEEF620E4E10C00D2714A /* Handle */,
 				DFEDEEE620E4D81700D2714A /* Ad */,
@@ -653,8 +671,10 @@
 				DFEDEED520E4CE3400D2714A /* FLTabBarViewController.m in Sources */,
 				DFEDEE9620E4C4A900D2714A /* ViewController.m in Sources */,
 				DFEDEEA120E4C4AA00D2714A /* main.m in Sources */,
+				DFE2EFEB20EDF6A40098D51C /* TestManagerConfig.m in Sources */,
 				DFEDEEDF20E4D66E00D2714A /* HomePageViewController.m in Sources */,
 				DFE2EFDC20EA0D570098D51C /* LoginViewController.m in Sources */,
+				DFE2EFF220F0CBAE0098D51C /* UIColor+Extension.m in Sources */,
 				DFEDEEF420E4DBC900D2714A /* HttpTool.m in Sources */,
 				DFEDEEDB20E4D07A00D2714A /* FLNavigationViewController.m in Sources */,
 				DFE2EFE320EA1DDB0098D51C /* UserManager.m in Sources */,

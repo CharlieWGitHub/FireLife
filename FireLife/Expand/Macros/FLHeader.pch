@@ -10,15 +10,59 @@
 #define FLHeader_pch
 
 #import "APIConfig.h"
+
 #import "MJExtension.h"
+#import "UIColor+Extension.h"
 
 
 //获取屏幕 宽度、高度、
 #define lSCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
 #define lSCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+/**
+ 导航栏高度
+ */
+#define NAVIGATIONBAR_HEIGHT   (SCREEN_HEIGHT == 812.0 ? 88 : 64)
+
+/**
+ tabbar高度
+ */
+#define TABBAR_HEIGHT          (SCREEN_HEIGHT==812.0 ? 83 : 49)
+/**
+ 状态栏高度
+ */
+#define STATUS_BAR_HEIGHT      (SCREEN_HEIGHT==812.0 ? 44 : 20)
 
 //RGB
 #define lRGBACOLOR(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+
+//获取storyboard
+#define lStoryboard(sname,vcname) [[UIStoryboard storyboardWithName:(sname) bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:(vcname)]
+//本地存储
+#define lUSER_DEFAULT [NSUserDefaults standardUserDefaults]
+
+/**log*/
+#ifdef DEBUG
+#define QDLog(...) NSLog(@"%s \n %@",__func__,[NSString stringWithFormat:__VA_ARGS__])
+#else
+#define QDLog(...)
+#endif
+
+/** 循环引用 */
+#define WEAK_SELF  __weak typeof (self) weakSelf = self
+
+/**
+ 16进制颜色
+ */
+#define HEXAlphaColor(hex,a)   [UIColor colorWithHexString:hex alpha:a]
+
+/**
+ 16进制颜色
+ */
+#define HEXColor(hex)          [UIColor colorWithHexString:hex]
+/**
+ 导航栏背景色
+ */
+#define NAVIGATIONBAR_COLOR    [UIColor colorWithHexString:@"#3AB187"]
 
 
 
