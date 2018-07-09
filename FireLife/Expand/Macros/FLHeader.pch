@@ -14,6 +14,7 @@
 #import "MJExtension.h"
 #import "UIColor+Extension.h"
 
+#define iOS9Later ([UIDevice currentDevice].systemVersion.floatValue >= 9.0f)
 
 //获取屏幕 宽度、高度、
 #define lSCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)

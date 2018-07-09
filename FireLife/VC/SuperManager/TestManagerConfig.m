@@ -36,6 +36,7 @@ static TestManagerConfig *_instance;
                                kTestAutoCloseKey: @YES,
                                kTestActionKey: ^{
                                    NSLog(@"开发环境");
+                                   
                                }
                                },
                            @{
@@ -43,6 +44,7 @@ static TestManagerConfig *_instance;
                                kTestAutoCloseKey: @YES,
                                kTestActionKey: ^{
                                    NSLog(@"测试环境");
+                                   
                                }
                                },
                            @{
@@ -50,6 +52,7 @@ static TestManagerConfig *_instance;
                                kTestAutoCloseKey: @YES,
                                kTestActionKey: ^{
                                    NSLog(@"线上环境");
+                                   
                                }
                                },
                            @{
