@@ -19,7 +19,7 @@
 @implementation FLTabBarViewController
 -(FLTabBarView *)flTabbar{
     if (!_flTabbar) {
-        _flTabbar = [[FLTabBarView alloc]initWithFrame:CGRectMake(0, 0, lSCREEN_WIDTH, 49)];
+        _flTabbar = [[FLTabBarView alloc]initWithFrame:CGRectMake(0, 0, lSCREEN_WIDTH, TABBAR_HEIGHT)];
         _flTabbar.delegate = self;
     }
     
