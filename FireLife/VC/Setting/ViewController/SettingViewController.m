@@ -17,7 +17,7 @@
 
 @property (nonatomic ,strong) UICollectionView *myCollectionView;
 @property (nonatomic ,strong) NSMutableArray *dateArray;
-
+@property (nonatomic ,strong) PersonalHeadView *psesonalHeadView;
 
 @end
 
@@ -68,15 +68,16 @@ static NSString *const footerId = @"footerId";
     flowLayout.minimumLineSpacing = 5;
     // 设置布局的内边距
     flowLayout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);
+    flowLayout.headerReferenceSize=CGSizeMake(lSCREEN_WIDTH, 225); //设置collectionView头视图的大小
     // 滚动方向
     flowLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
    
-    PersonalHeadView * view = [PersonalHeadView loadHeadView];
-    UIView * view1 = [[UIView alloc]initWithFrame:CGRectMake(0, 0, lSCREEN_WIDTH, 285)];
-    view1 = view;
-    [self.view addSubview:view1];
+//    PersonalHeadView * view = [PersonalHeadView loadHeadView];
+//    UIView * view1 = [[UIView alloc]initWithFrame:CGRectMake(0, 0, lSCREEN_WIDTH, 285)];
+//    view1 = view;
+//    [self.view addSubview:view1];
     
-    self.myCollectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 285, lSCREEN_WIDTH, lSCREEN_HEIGHT-285) collectionViewLayout:flowLayout];
+    self.myCollectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, lSCREEN_WIDTH, lSCREEN_HEIGHT) collectionViewLayout:flowLayout];
     self.myCollectionView.backgroundColor = [UIColor whiteColor];
     self.myCollectionView.dataSource = self;
     
@@ -126,35 +127,39 @@ static NSString *const footerId = @"footerId";
     CustomCollectionViewCell *cell = [self.myCollectionView dequeueReusableCellWithReuseIdentifier:cellId forIndexPath:indexPath];
     [cell.cellImage sd_setImageWithURL:[NSURL URLWithString:self.dateArray[indexPath.row]] placeholderImage:[UIImage imageNamed:@"placeHold.jpeg"]];
     cell.cellLab.text = [NSString stringWithFormat:@"-第%ld个-",(long)indexPath.row];
-    
     return cell;
 }
-
+- (void)addContent{
+    PersonalHeadView * head = [PersonalHeadView loadHeadView];
+    head.frame = CGRectMake(0, 0, lSCREEN_WIDTH, 225);
+    self.psesonalHeadView = head;
+}
 // 和UITableView类似，UICollectionView也可设置段头段尾
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
 {
-    
     if([kind isEqualToString:UICollectionElementKindSectionHeader])
     {
         UICollectionReusableView *headerView = [self.myCollectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:headerId forIndexPath:indexPath];
-        if(headerView == nil)
-        {
-            headerView = [[UICollectionReusableView alloc] init];
-        }
-        headerView.backgroundColor = [UIColor grayColor];
-        
+//        if(headerView == nil)
+//        {
+//            headerView = [[UICollectionReusableView alloc] init];
+//        }
+//        headerView.backgroundColor = [UIColor grayColor];
+        /*****/
+        [self addContent];
+        [headerView addSubview: self.psesonalHeadView];
         return headerView;
     }
-    else if([kind isEqualToString:UICollectionElementKindSectionFooter])
-    {
-        UICollectionReusableView *footerView = [self.myCollectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:footerId forIndexPath:indexPath];
-        if(footerView == nil)
-        {
-            footerView = [[UICollectionReusableView alloc] init];
-        }
-        footerView.backgroundColor = [UIColor lightGrayColor];
-        return footerView;
-    }
+//    else if([kind isEqualToString:UICollectionElementKindSectionFooter])
+//    {
+//        UICollectionReusableView *footerView = [self.myCollectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:footerId forIndexPath:indexPath];
+//        if(footerView == nil)
+//        {
+//            footerView = [[UICollectionReusableView alloc] init];
+//        }
+//        footerView.backgroundColor = [UIColor lightGrayColor];
+//        return footerView;
+//    }
     return nil;
 }
 
@@ -185,7 +190,7 @@ static NSString *const footerId = @"footerId";
 // 选中某item
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    QDLog(@"-------%ld--------",indexPath.row);
+    QDLog(@"-------%ld--------",(long)indexPath.row);
 }
 
 // 长按某item，弹出copy和paste的菜单
