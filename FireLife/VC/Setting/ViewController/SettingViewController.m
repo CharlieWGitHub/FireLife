@@ -11,6 +11,8 @@
 #import "TestManagerConfig.h"
 #import "CustomCollectionViewCell.h"
 #import <UIImageView+WebCache.h>
+#import "PersonalHeadView.h"
+
 @interface SettingViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 
 @property (nonatomic ,strong) UICollectionView *myCollectionView;
@@ -41,14 +43,6 @@ static NSString *const footerId = @"footerId";
     // Do any additional setup after loading the view.
 }
 - (void)loadData{
-//    for (int i = 0; i < 20; i++) {
-//        NSDictionary *itemDic = [[NSDictionary alloc] initWithObjectsAndKeys:
-//                                 [NSString stringWithFormat:@"%d.jpg",i],@"imageName",
-//                                 [NSString stringWithFormat:@"我是第%d个妹子",i] ,@"textLable",
-//                                 nil];
-//        [self.dateArray addObject:itemDic];
-//    }
-    
     [self.dateArray addObject:@"http://img.hb.aicdn.com/cabd7ee62c515c282a768dc67b818afb351dd1c72a2f0-7iYrbH_fw658"];
     [self.dateArray addObject:@"http://img.hb.aicdn.com/da55759b61d8ea2db3f57238c811c73ae717a15626a18-RjSIC9_fw658"];
     [self.dateArray addObject:@"http://img.hb.aicdn.com/9098435a6d3bf2ad7631dae59a9c10e53fda34121ebfd-qbGBQk_fw658"];
@@ -77,9 +71,15 @@ static NSString *const footerId = @"footerId";
     // 滚动方向
     flowLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
    
-    self.myCollectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:flowLayout];
+    PersonalHeadView * view = [PersonalHeadView loadHeadView];
+    UIView * view1 = [[UIView alloc]initWithFrame:CGRectMake(0, 0, lSCREEN_WIDTH, 285)];
+    view1 = view;
+    [self.view addSubview:view1];
+    
+    self.myCollectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 285, lSCREEN_WIDTH, lSCREEN_HEIGHT-285) collectionViewLayout:flowLayout];
     self.myCollectionView.backgroundColor = [UIColor whiteColor];
     self.myCollectionView.dataSource = self;
+    
     self.myCollectionView.delegate = self;
     [self.view addSubview:self.myCollectionView];
     

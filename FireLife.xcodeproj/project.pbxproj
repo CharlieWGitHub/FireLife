@@ -15,6 +15,8 @@
 		DFD39DFF20F3039F00170B32 /* placeHold.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DFD39DFE20F3039F00170B32 /* placeHold.jpeg */; };
 		DFD39E0120F337EE00170B32 /* alipay.png in Resources */ = {isa = PBXBuildFile; fileRef = DFD39E0020F337EE00170B32 /* alipay.png */; };
 		DFD39E0320F337FE00170B32 /* wxpay.png in Resources */ = {isa = PBXBuildFile; fileRef = DFD39E0220F337FE00170B32 /* wxpay.png */; };
+		DFD39E0620F361D500170B32 /* PersonalHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD39E0520F361D500170B32 /* PersonalHeadView.m */; };
+		DFD39E0820F3620300170B32 /* PersonalHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFD39E0720F3620300170B32 /* PersonalHeadView.xib */; };
 		DFE2EFDC20EA0D570098D51C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE2EFDA20EA0D570098D51C /* LoginViewController.m */; };
 		DFE2EFDD20EA0D570098D51C /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFE2EFDB20EA0D570098D51C /* LoginViewController.xib */; };
 		DFE2EFDF20EA0E1F0098D51C /* loginBg.png in Resources */ = {isa = PBXBuildFile; fileRef = DFE2EFDE20EA0E1F0098D51C /* loginBg.png */; };
@@ -80,6 +82,9 @@
 		DFD39DFE20F3039F00170B32 /* placeHold.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = placeHold.jpeg; sourceTree = "<group>"; };
 		DFD39E0020F337EE00170B32 /* alipay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alipay.png; sourceTree = "<group>"; };
 		DFD39E0220F337FE00170B32 /* wxpay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wxpay.png; sourceTree = "<group>"; };
+		DFD39E0420F361D500170B32 /* PersonalHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonalHeadView.h; sourceTree = "<group>"; };
+		DFD39E0520F361D500170B32 /* PersonalHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonalHeadView.m; sourceTree = "<group>"; };
+		DFD39E0720F3620300170B32 /* PersonalHeadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonalHeadView.xib; sourceTree = "<group>"; };
 		DFE2EFD920EA0D570098D51C /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		DFE2EFDA20EA0D570098D51C /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		DFE2EFDB20EA0D570098D51C /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
@@ -174,6 +179,9 @@
 				DFD39DF920F2FE5900170B32 /* CustomCollectionViewCell.h */,
 				DFD39DFA20F2FE5900170B32 /* CustomCollectionViewCell.m */,
 				DFD39DFB20F2FE5900170B32 /* CustomCollectionViewCell.xib */,
+				DFD39E0420F361D500170B32 /* PersonalHeadView.h */,
+				DFD39E0520F361D500170B32 /* PersonalHeadView.m */,
+				DFD39E0720F3620300170B32 /* PersonalHeadView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -619,6 +627,7 @@
 			files = (
 				DFE2EFDD20EA0D570098D51C /* LoginViewController.xib in Resources */,
 				DFEDEE9E20E4C4AA00D2714A /* LaunchScreen.storyboard in Resources */,
+				DFD39E0820F3620300170B32 /* PersonalHeadView.xib in Resources */,
 				DFEDEE9B20E4C4AA00D2714A /* Assets.xcassets in Resources */,
 				DFE2EFDF20EA0E1F0098D51C /* loginBg.png in Resources */,
 				DFEDEE9920E4C4A900D2714A /* Main.storyboard in Resources */,
@@ -715,6 +724,7 @@
 				DFEDEED820E4CE6C00D2714A /* FLTabBarView.m in Sources */,
 				DFEDEED520E4CE3400D2714A /* FLTabBarViewController.m in Sources */,
 				DFEDEE9620E4C4A900D2714A /* ViewController.m in Sources */,
+				DFD39E0620F361D500170B32 /* PersonalHeadView.m in Sources */,
 				DFEDEEA120E4C4AA00D2714A /* main.m in Sources */,
 				DFE2EFEB20EDF6A40098D51C /* TestManagerConfig.m in Sources */,
 				DFEDEEDF20E4D66E00D2714A /* HomePageViewController.m in Sources */,
