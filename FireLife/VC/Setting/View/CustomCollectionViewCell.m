@@ -12,6 +12,8 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
+    self.contentView.backgroundColor = [UIColor groupTableViewBackgroundColor];
+    
     // Initialization code
 }
 

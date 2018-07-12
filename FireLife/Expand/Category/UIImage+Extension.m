@@ -1,14 +1,14 @@
 //
-//  UIView+Extension.m
+//  UIImage+Extension.m
 //  FireLife
 //
-//  Created by 王成龙 on 2018/7/10.
+//  Created by 王成龙 on 2018/7/11.
 //  Copyright © 2018年 charlie. All rights reserved.
 //
 
-#import "UIView+Extension.h"
+#import "UIImage+Extension.h"
 
-@implementation UIView (Extension)
+@implementation UIImage (Extension)
 //按比例缩放,size 是你要把图显示到 多大区域
 + (UIImage *)imageCompressFitSizeScale:(UIImage *)sourceImage targetSize:(CGSize)size{
     UIImage *newImage = nil;
@@ -116,11 +116,10 @@
     newImage = UIGraphicsGetImageFromCurrentImageContext();
     
     if(newImage == nil){
-        
         NSLog(@"scale image fail");
     }
     UIGraphicsEndImageContext();
     return newImage;
-
+    
 }
 @end
