@@ -8,6 +8,8 @@
 
 #import "LoginViewController.h"
 #import "FLTabBarViewController.h"
+#import "UserManager.h"
+#import "UserManagerTool.h"
 
 @interface LoginViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *address;
@@ -24,11 +26,13 @@
     // Do any additional setup after loading the view from its nib.
 }
 - (IBAction)loginClicked:(id)sender {
-//    登录
+//  登录 - 成功 - 保存信息
+    UserManager * user =  [UserManager userManagerWithDic:@{@"user_id":@"11",@"user_name":@"tom"}];
+    [UserManagerTool saveUserManager:user];
+    
     FLTabBarViewController * main = [[FLTabBarViewController alloc]init];
     [[[[UIApplication sharedApplication]delegate]window]setRootViewController:main];
     [[[[UIApplication sharedApplication]delegate]window] makeKeyAndVisible];
-    
 }
 
 - (void)didReceiveMemoryWarning {

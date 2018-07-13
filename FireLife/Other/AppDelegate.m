@@ -11,6 +11,8 @@
 #import "AdView.h"
 #import "UserManagerTool.h"
 #import "LoginViewController.h"
+#import "HomePageViewController.h"
+#import "SettingViewController.h"
 
 @interface AppDelegate ()
 
@@ -27,7 +29,6 @@
     [self.window addSubview:view];
     
     if (userManager) {
-        
         FLTabBarViewController * main = [[FLTabBarViewController alloc]init];
         self.window.rootViewController = main;
         [self.window makeKeyAndVisible];
@@ -38,16 +39,53 @@
         self.window.rootViewController = vc;
         
     }
-    
-
-    
-   
-    
-    
+        if (@available(iOS 9.1, *)) {
+            UIApplicationShortcutIcon *iconFitness = [UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeLove];
+            //菜单文字
+            UIMutableApplicationShortcutItem *itemFitness = [[UIMutableApplicationShortcutItem alloc] initWithType:@"1" localizedTitle:@"小超人"];
+            
+            //绑定信息到指定菜单
+            itemFitness.icon = iconFitness;
+            // 菜单图标
+            //        UIApplicationShortcutIcon *iconRun = [UIApplicationShortcutIcon iconWithTemplateImageName:@"wxpay"];
+            UIApplicationShortcutIcon * iconRun = [UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeCompose];
+            //菜单文字
+            UIMutableApplicationShortcutItem *itemRun = [[UIMutableApplicationShortcutItem alloc] initWithType:@"2" localizedTitle:@"小魔兽"];
+            //绑定信息到指定菜单
+            itemRun.icon = iconRun;
+            //绑定到App icon
+            application.shortcutItems = @[itemFitness,itemRun];
+        } else {
+            
+            // Fallback on earlier versions
+        }
     // Override point for customization after application launch.
     return YES;
 }
-
+- (void)application:(UIApplication *)application performActionForShortcutItem:(nonnull UIApplicationShortcutItem *)shortcutItem completionHandler:(nonnull void (^)(BOOL))completionHandler{
+    if ([shortcutItem.type isEqualToString:@"1"]) {
+        //如果有导航栏参考下面注释部分
+        UINavigationController *myNavi = self.window.rootViewController.childViewControllers[0];
+        //        _tabBar.selectedIndex = 0;
+        SettingViewController * picker1 = [[SettingViewController alloc]init];//进入窗口的初始化
+        //利用NSUserDefaults 的标识，来防止重复初始化VC
+        //    if ([[NSUserDefaults standardUserDefaults]boolForKey:@"3d"]) {
+        //       [myNavi popViewControllerAnimated:NO];
+        //      [myNavi pushViewController:_picker1 animated:YES ];
+        //    }else{
+        [myNavi pushViewController:picker1 animated:YES ];
+        
+        //    }
+        
+    }
+    if ([shortcutItem.type isEqualToString:@"2"]) {
+        UINavigationController *myNavi = self.window.rootViewController.childViewControllers[1];
+        HomePageViewController *vc = [[HomePageViewController alloc]init];//进入窗口的初始化
+        [myNavi pushViewController:vc animated:YES ];
+  
+    }
+    
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

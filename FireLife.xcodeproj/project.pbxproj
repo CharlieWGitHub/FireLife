@@ -10,11 +10,20 @@
 		515D54BA35442AD26E1F23B7 /* libPods-FireLife.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD450182052EBF680F633DA4 /* libPods-FireLife.a */; };
 		574EF5198A52B39A58AD224C /* libPods-FireLifeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9639516DE837EE8006A29B73 /* libPods-FireLifeTests.a */; };
 		7633F4D82F4C7EF084E2676B /* libPods-FireLifeUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B70B514A63AEBD260BFD28D /* libPods-FireLifeUITests.a */; };
+		DFD39DFC20F2FE5900170B32 /* CustomCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD39DFA20F2FE5900170B32 /* CustomCollectionViewCell.m */; };
+		DFD39DFD20F2FE5900170B32 /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFD39DFB20F2FE5900170B32 /* CustomCollectionViewCell.xib */; };
+		DFD39DFF20F3039F00170B32 /* placeHold.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DFD39DFE20F3039F00170B32 /* placeHold.jpeg */; };
+		DFD39E0120F337EE00170B32 /* alipay.png in Resources */ = {isa = PBXBuildFile; fileRef = DFD39E0020F337EE00170B32 /* alipay.png */; };
+		DFD39E0320F337FE00170B32 /* wxpay.png in Resources */ = {isa = PBXBuildFile; fileRef = DFD39E0220F337FE00170B32 /* wxpay.png */; };
+		DFD39E0620F361D500170B32 /* PersonalHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD39E0520F361D500170B32 /* PersonalHeadView.m */; };
+		DFD39E0820F3620300170B32 /* PersonalHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFD39E0720F3620300170B32 /* PersonalHeadView.xib */; };
 		DFE2EFDC20EA0D570098D51C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE2EFDA20EA0D570098D51C /* LoginViewController.m */; };
 		DFE2EFDD20EA0D570098D51C /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFE2EFDB20EA0D570098D51C /* LoginViewController.xib */; };
 		DFE2EFDF20EA0E1F0098D51C /* loginBg.png in Resources */ = {isa = PBXBuildFile; fileRef = DFE2EFDE20EA0E1F0098D51C /* loginBg.png */; };
 		DFE2EFE320EA1DDB0098D51C /* UserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE2EFE220EA1DDB0098D51C /* UserManager.m */; };
 		DFE2EFE620EA20A80098D51C /* UserManagerTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE2EFE520EA20A80098D51C /* UserManagerTool.m */; };
+		DFE2EFEB20EDF6A40098D51C /* TestManagerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE2EFEA20EDF6A40098D51C /* TestManagerConfig.m */; };
+		DFE2EFF220F0CBAE0098D51C /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE2EFF120F0CBAE0098D51C /* UIColor+Extension.m */; };
 		DFEDEE9320E4C4A900D2714A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEDEE9220E4C4A900D2714A /* AppDelegate.m */; };
 		DFEDEE9620E4C4A900D2714A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEDEE9520E4C4A900D2714A /* ViewController.m */; };
 		DFEDEE9920E4C4A900D2714A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFEDEE9720E4C4A900D2714A /* Main.storyboard */; };
@@ -67,6 +76,15 @@
 		C1748C4CCC4CF76D725F1EF0 /* Pods-FireLife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireLife.release.xcconfig"; path = "Pods/Target Support Files/Pods-FireLife/Pods-FireLife.release.xcconfig"; sourceTree = "<group>"; };
 		CD450182052EBF680F633DA4 /* libPods-FireLife.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FireLife.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0DEE4EC0D6DD16B6FB009F0 /* Pods-FireLife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireLife.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FireLife/Pods-FireLife.debug.xcconfig"; sourceTree = "<group>"; };
+		DFD39DF920F2FE5900170B32 /* CustomCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomCollectionViewCell.h; sourceTree = "<group>"; };
+		DFD39DFA20F2FE5900170B32 /* CustomCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomCollectionViewCell.m; sourceTree = "<group>"; };
+		DFD39DFB20F2FE5900170B32 /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
+		DFD39DFE20F3039F00170B32 /* placeHold.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = placeHold.jpeg; sourceTree = "<group>"; };
+		DFD39E0020F337EE00170B32 /* alipay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alipay.png; sourceTree = "<group>"; };
+		DFD39E0220F337FE00170B32 /* wxpay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wxpay.png; sourceTree = "<group>"; };
+		DFD39E0420F361D500170B32 /* PersonalHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonalHeadView.h; sourceTree = "<group>"; };
+		DFD39E0520F361D500170B32 /* PersonalHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonalHeadView.m; sourceTree = "<group>"; };
+		DFD39E0720F3620300170B32 /* PersonalHeadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonalHeadView.xib; sourceTree = "<group>"; };
 		DFE2EFD920EA0D570098D51C /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		DFE2EFDA20EA0D570098D51C /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		DFE2EFDB20EA0D570098D51C /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
@@ -75,6 +93,10 @@
 		DFE2EFE220EA1DDB0098D51C /* UserManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserManager.m; sourceTree = "<group>"; };
 		DFE2EFE420EA20A80098D51C /* UserManagerTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserManagerTool.h; sourceTree = "<group>"; };
 		DFE2EFE520EA20A80098D51C /* UserManagerTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserManagerTool.m; sourceTree = "<group>"; };
+		DFE2EFE920EDF6A40098D51C /* TestManagerConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestManagerConfig.h; sourceTree = "<group>"; };
+		DFE2EFEA20EDF6A40098D51C /* TestManagerConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestManagerConfig.m; sourceTree = "<group>"; };
+		DFE2EFF020F0CBAE0098D51C /* UIColor+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
+		DFE2EFF120F0CBAE0098D51C /* UIColor+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
 		DFEDEE8E20E4C4A900D2714A /* FireLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFEDEE9120E4C4A900D2714A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DFEDEE9220E4C4A900D2714A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -151,6 +173,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DFD39DF620F2FD4700170B32 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DFD39DF920F2FE5900170B32 /* CustomCollectionViewCell.h */,
+				DFD39DFA20F2FE5900170B32 /* CustomCollectionViewCell.m */,
+				DFD39DFB20F2FE5900170B32 /* CustomCollectionViewCell.xib */,
+				DFD39E0420F361D500170B32 /* PersonalHeadView.h */,
+				DFD39E0520F361D500170B32 /* PersonalHeadView.m */,
+				DFD39E0720F3620300170B32 /* PersonalHeadView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DFD39DF720F2FD4D00170B32 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DFD39DF820F2FD5100170B32 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DFEDEEE020E4D68400D2714A /* SettingViewController.h */,
+				DFEDEEE120E4D68400D2714A /* SettingViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		DFE2EFD120E9D3CA0098D51C /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +230,15 @@
 				DFE2EFE520EA20A80098D51C /* UserManagerTool.m */,
 			);
 			path = UserManager;
+			sourceTree = "<group>";
+		};
+		DFE2EFE820EDF31F0098D51C /* SuperManager */ = {
+			isa = PBXGroup;
+			children = (
+				DFE2EFE920EDF6A40098D51C /* TestManagerConfig.h */,
+				DFE2EFEA20EDF6A40098D51C /* TestManagerConfig.m */,
+			);
+			path = SuperManager;
 			sourceTree = "<group>";
 		};
 		DFEDEE8520E4C4A900D2714A = {
@@ -248,6 +308,8 @@
 		DFEDEEC420E4C97300D2714A /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				DFE2EFF020F0CBAE0098D51C /* UIColor+Extension.h */,
+				DFE2EFF120F0CBAE0098D51C /* UIColor+Extension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -315,6 +377,9 @@
 		DFEDEECB20E4CA2500D2714A /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				DFD39E0220F337FE00170B32 /* wxpay.png */,
+				DFD39E0020F337EE00170B32 /* alipay.png */,
+				DFD39DFE20F3039F00170B32 /* placeHold.jpeg */,
 				DFE2EFDE20EA0E1F0098D51C /* loginBg.png */,
 			);
 			path = Image;
@@ -341,6 +406,7 @@
 		DFEDEECE20E4CBF400D2714A /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				DFE2EFE820EDF31F0098D51C /* SuperManager */,
 				DFE2EFD120E9D3CA0098D51C /* Login */,
 				DFEDEEF620E4E10C00D2714A /* Handle */,
 				DFEDEEE620E4D81700D2714A /* Ad */,
@@ -363,8 +429,9 @@
 		DFEDEED020E4CC1A00D2714A /* Setting */ = {
 			isa = PBXGroup;
 			children = (
-				DFEDEEE020E4D68400D2714A /* SettingViewController.h */,
-				DFEDEEE120E4D68400D2714A /* SettingViewController.m */,
+				DFD39DF820F2FD5100170B32 /* ViewController */,
+				DFD39DF720F2FD4D00170B32 /* Model */,
+				DFD39DF620F2FD4700170B32 /* View */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -560,11 +627,16 @@
 			files = (
 				DFE2EFDD20EA0D570098D51C /* LoginViewController.xib in Resources */,
 				DFEDEE9E20E4C4AA00D2714A /* LaunchScreen.storyboard in Resources */,
+				DFD39E0820F3620300170B32 /* PersonalHeadView.xib in Resources */,
 				DFEDEE9B20E4C4AA00D2714A /* Assets.xcassets in Resources */,
 				DFE2EFDF20EA0E1F0098D51C /* loginBg.png in Resources */,
 				DFEDEE9920E4C4A900D2714A /* Main.storyboard in Resources */,
+				DFD39DFF20F3039F00170B32 /* placeHold.jpeg in Resources */,
 				DFEDEF0A20E618CE00D2714A /* LiveViewController.xib in Resources */,
 				DFEDEEEB20E4D88500D2714A /* AdView.xib in Resources */,
+				DFD39DFD20F2FE5900170B32 /* CustomCollectionViewCell.xib in Resources */,
+				DFD39E0320F337FE00170B32 /* wxpay.png in Resources */,
+				DFD39E0120F337EE00170B32 /* alipay.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -652,13 +724,17 @@
 				DFEDEED820E4CE6C00D2714A /* FLTabBarView.m in Sources */,
 				DFEDEED520E4CE3400D2714A /* FLTabBarViewController.m in Sources */,
 				DFEDEE9620E4C4A900D2714A /* ViewController.m in Sources */,
+				DFD39E0620F361D500170B32 /* PersonalHeadView.m in Sources */,
 				DFEDEEA120E4C4AA00D2714A /* main.m in Sources */,
+				DFE2EFEB20EDF6A40098D51C /* TestManagerConfig.m in Sources */,
 				DFEDEEDF20E4D66E00D2714A /* HomePageViewController.m in Sources */,
 				DFE2EFDC20EA0D570098D51C /* LoginViewController.m in Sources */,
+				DFE2EFF220F0CBAE0098D51C /* UIColor+Extension.m in Sources */,
 				DFEDEEF420E4DBC900D2714A /* HttpTool.m in Sources */,
 				DFEDEEDB20E4D07A00D2714A /* FLNavigationViewController.m in Sources */,
 				DFE2EFE320EA1DDB0098D51C /* UserManager.m in Sources */,
 				DFEDEEEE20E4DA7600D2714A /* FLCacheHelp.m in Sources */,
+				DFD39DFC20F2FE5900170B32 /* CustomCollectionViewCell.m in Sources */,
 				DFEDEE9320E4C4A900D2714A /* AppDelegate.m in Sources */,
 				DFEDEF0D20E61ABF00D2714A /* FLExceptionHandle.m in Sources */,
 				DFEDEEF920E4E13000D2714A /* FLAdHandle.m in Sources */,
@@ -838,6 +914,7 @@
 				DEVELOPMENT_TEAM = Z3L8JB7WBX;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/FireLife/Expand/Macros/FLHeader.pch";
 				INFOPLIST_FILE = FireLife/Resource/Plist/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -857,6 +934,7 @@
 				DEVELOPMENT_TEAM = Z3L8JB7WBX;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/FireLife/Expand/Macros/FLHeader.pch";
 				INFOPLIST_FILE = FireLife/Resource/Plist/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
