@@ -37,6 +37,5 @@
 - (CGFloat)columMargin;
 - (CGFloat)rowMargin;
 - (UIEdgeInsets)defaultEdgeInsets;
-@property (nonatomic) CGSize headerReferenceSize;
 
 @end

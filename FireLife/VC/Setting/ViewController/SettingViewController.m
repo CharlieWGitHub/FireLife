@@ -13,9 +13,9 @@
 #import <UIImageView+WebCache.h>
 #import "PersonalHeadView.h"
 #import "UIImage+Extension.h"
-#import "FLWaterfallCollectionLayout.h"
+#import "FLWaterFloLayout.h"
 
-@interface SettingViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,FLWaterfallCollectionLayoutDelegate>
+@interface SettingViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,FLWaterFloLayoutDelegate>
 
 @property (nonatomic ,strong) UICollectionView *myCollectionView;
 @property (nonatomic ,strong) NSMutableArray *dateArray;
@@ -42,7 +42,6 @@ static NSString *const footerId = @"footerId";
 //    [self addTap];
     [self creatCollectionView];
     [self loadData];
-    // Do any additional setup after loading the view.
 }
 - (void)loadData{
     
@@ -84,19 +83,19 @@ static NSString *const footerId = @"footerId";
 //    flowLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
     
   
-    FLWaterfallCollectionLayout * flowLayout = [[FLWaterfallCollectionLayout alloc]init];
-    flowLayout.headerReferenceSize = CGSizeMake(lSCREEN_WIDTH, 225);
+    FLWaterFloLayout * flowLayout = [[FLWaterFloLayout alloc]init];
+//    flowLayout.headerReferenceSize = CGSizeMake(lSCREEN_WIDTH, 225);
+//    flowLayout.footerReferenceSize = CGSizeMake(lSCREEN_WIDTH, 20);
     flowLayout.delegate = self;
+   
     self.myCollectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, lSCREEN_WIDTH, lSCREEN_HEIGHT) collectionViewLayout:flowLayout];
     self.myCollectionView.backgroundColor = [UIColor groupTableViewBackgroundColor];
     self.myCollectionView.dataSource = self;
-    
     self.myCollectionView.delegate = self;
     [self.view addSubview:self.myCollectionView];
     
     // 注册cell、sectionHeader、sectionFooter
     [self.myCollectionView registerNib:[UINib nibWithNibName:NSStringFromClass([CustomCollectionViewCell class]) bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:cellId];
-
     [self.myCollectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:headerId];
     [self.myCollectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:footerId];
     
@@ -120,30 +119,30 @@ static NSString *const footerId = @"footerId";
 }
 
 #pragma mark - WaterFlowLayoutDelegate
-- (CGFloat)waterFlowLayout:(FLWaterfallCollectionLayout *)waterFlowLayout heightForRowAtIndex:(NSInteger)index itemWidth:(CGFloat)width{
+- (CGFloat)waterFlowLayout:(FLWaterFloLayout *)waterFlowLayout heightForRowAtIndex:(NSInteger)index itemWidth:(CGFloat)width{
     UIImage * temp = self.dateArray[index];
     return temp.size.height;
 }
 
 //决定cell的列数
-- (NSInteger)cloumnCountInWaterFlowLayout:(FLWaterfallCollectionLayout *)waterFlowLayout
+- (NSInteger)cloumnCountInWaterFlowLayout:(FLWaterFloLayout *)waterFlowLayout
 {
     return 2;
 }
 //决定cell 的列的距离
-- (CGFloat)columMarginInWaterFlowLayout:(FLWaterfallCollectionLayout *)waterFlowLayout
+- (CGFloat)columMarginInWaterFlowLayout:(FLWaterFloLayout *)waterFlowLayout
 {
     return 5;
 }
 
 //决定cell 的行的距离
-- (CGFloat)rowMarginInWaterFlowLayout:(FLWaterfallCollectionLayout *)waterFlowLayout
+- (CGFloat)rowMarginInWaterFlowLayout:(FLWaterFloLayout *)waterFlowLayout
 {
     return 3;
 }
 
 //决定cell 的边缘距
-- (UIEdgeInsets)edgeInsetInWaterFlowLayout:(FLWaterfallCollectionLayout *)waterFlowLayout
+- (UIEdgeInsets)edgeInsetInWaterFlowLayout:(FLWaterFloLayout *)waterFlowLayout
 {
     return UIEdgeInsetsMake(10, 10, 10, 10);
 }
@@ -154,7 +153,6 @@ static NSString *const footerId = @"footerId";
 //设定全局的Cell尺寸，如果想要单独定义某个Cell的尺寸，可以使用下面方法：
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
     UIImage * temp = self.dateArray[indexPath.row];
-    QDLog(@"cell.height=%f",temp.size.height);
     return CGSizeMake((lSCREEN_WIDTH-30)/2, temp.size.height+55);
 }
 //minimumLineSpacing属性
@@ -190,7 +188,6 @@ static NSString *const footerId = @"footerId";
     
     cell.cellImage.image = self.dateArray[indexPath.row];
 //    [cell.cellImage sd_setImageWithURL:[NSURL URLWithString:self.dateArray[indexPath.row]] placeholderImage:[UIImage imageNamed:@"placeHold.jpeg"]];
-    
     cell.cellLab.text = [NSString stringWithFormat:@"-第%ld个-",(long)indexPath.row];
     return cell;
 }
@@ -284,12 +281,12 @@ static NSString *const footerId = @"footerId";
     else if([NSStringFromSelector(action) isEqualToString:@"paste:"])
     {
         NSLog(@"-------------执行粘贴-------------");
-        [self.myCollectionView performBatchUpdates:^{
+//        [self.myCollectionView performBatchUpdates:^{
 //            [self.dateArray removeObjectAtIndex:indexPath.row];
 //            [self.myCollectionView deleteItemsAtIndexPaths:@[indexPath]];
-            [self.dateArray addObject:@"http://img.hb.aicdn.com/67188dcd699af791ec9f4702bf85158d14113d2115fbd-yXuhf3_fw658"];
-            [self.myCollectionView insertItemsAtIndexPaths:@[indexPath]];
-        } completion:nil];
+//            [self.dateArray addObject:@"http://img.hb.aicdn.com/67188dcd699af791ec9f4702bf85158d14113d2115fbd-yXuhf3_fw658"];
+//            [self.myCollectionView insertItemsAtIndexPaths:@[indexPath]];
+//        } completion:nil];
         
     }
 }
