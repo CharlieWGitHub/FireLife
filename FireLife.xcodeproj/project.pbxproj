@@ -10,6 +10,8 @@
 		515D54BA35442AD26E1F23B7 /* libPods-FireLife.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD450182052EBF680F633DA4 /* libPods-FireLife.a */; };
 		574EF5198A52B39A58AD224C /* libPods-FireLifeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9639516DE837EE8006A29B73 /* libPods-FireLifeTests.a */; };
 		7633F4D82F4C7EF084E2676B /* libPods-FireLifeUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B70B514A63AEBD260BFD28D /* libPods-FireLifeUITests.a */; };
+		DF65661920F845C500B2FE3B /* BeautifViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF65661720F845C500B2FE3B /* BeautifViewController.m */; };
+		DF65661A20F845C500B2FE3B /* BeautifViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF65661820F845C500B2FE3B /* BeautifViewController.xib */; };
 		DFD39DFC20F2FE5900170B32 /* CustomCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD39DFA20F2FE5900170B32 /* CustomCollectionViewCell.m */; };
 		DFD39DFD20F2FE5900170B32 /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFD39DFB20F2FE5900170B32 /* CustomCollectionViewCell.xib */; };
 		DFD39DFF20F3039F00170B32 /* placeHold.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DFD39DFE20F3039F00170B32 /* placeHold.jpeg */; };
@@ -24,6 +26,8 @@
 		DFE2EFE620EA20A80098D51C /* UserManagerTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE2EFE520EA20A80098D51C /* UserManagerTool.m */; };
 		DFE2EFEB20EDF6A40098D51C /* TestManagerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE2EFEA20EDF6A40098D51C /* TestManagerConfig.m */; };
 		DFE2EFF220F0CBAE0098D51C /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE2EFF120F0CBAE0098D51C /* UIColor+Extension.m */; };
+		DFED5A3220F6E5540087F96F /* FLWaterfallCollectionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DFED5A3120F6E5540087F96F /* FLWaterfallCollectionLayout.m */; };
+		DFED5A3520F6FAA50087F96F /* FLWaterFloLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DFED5A3420F6FAA50087F96F /* FLWaterFloLayout.m */; };
 		DFEDEE9320E4C4A900D2714A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEDEE9220E4C4A900D2714A /* AppDelegate.m */; };
 		DFEDEE9620E4C4A900D2714A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEDEE9520E4C4A900D2714A /* ViewController.m */; };
 		DFEDEE9920E4C4A900D2714A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFEDEE9720E4C4A900D2714A /* Main.storyboard */; };
@@ -47,6 +51,22 @@
 		DFEDEF0920E618CE00D2714A /* LiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEDEF0720E618CE00D2714A /* LiveViewController.m */; };
 		DFEDEF0A20E618CE00D2714A /* LiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFEDEF0820E618CE00D2714A /* LiveViewController.xib */; };
 		DFEDEF0D20E61ABF00D2714A /* FLExceptionHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEDEF0C20E61ABF00D2714A /* FLExceptionHandle.m */; };
+		DFF60D2420F5E85D00CAAAAC /* cell_bone.png in Resources */ = {isa = PBXBuildFile; fileRef = DFF60D2220F5E85D00CAAAAC /* cell_bone.png */; };
+		DFF60D2520F5E85D00CAAAAC /* cell_animal.png in Resources */ = {isa = PBXBuildFile; fileRef = DFF60D2320F5E85D00CAAAAC /* cell_animal.png */; };
+		DFF60D3220F5F67400CAAAAC /* image5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DFF60D2620F5F67200CAAAAC /* image5.jpeg */; };
+		DFF60D3320F5F67400CAAAAC /* image11.png in Resources */ = {isa = PBXBuildFile; fileRef = DFF60D2720F5F67200CAAAAC /* image11.png */; };
+		DFF60D3420F5F67400CAAAAC /* image6.png in Resources */ = {isa = PBXBuildFile; fileRef = DFF60D2820F5F67200CAAAAC /* image6.png */; };
+		DFF60D3520F5F67400CAAAAC /* image1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DFF60D2920F5F67300CAAAAC /* image1.jpeg */; };
+		DFF60D3620F5F67400CAAAAC /* image7.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DFF60D2A20F5F67300CAAAAC /* image7.jpeg */; };
+		DFF60D3720F5F67400CAAAAC /* image2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DFF60D2B20F5F67300CAAAAC /* image2.jpeg */; };
+		DFF60D3820F5F67400CAAAAC /* image3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DFF60D2C20F5F67300CAAAAC /* image3.jpeg */; };
+		DFF60D3920F5F67400CAAAAC /* imag.png in Resources */ = {isa = PBXBuildFile; fileRef = DFF60D2D20F5F67300CAAAAC /* imag.png */; };
+		DFF60D3A20F5F67400CAAAAC /* image4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DFF60D2E20F5F67300CAAAAC /* image4.jpeg */; };
+		DFF60D3B20F5F67400CAAAAC /* image8.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DFF60D2F20F5F67300CAAAAC /* image8.jpeg */; };
+		DFF60D3C20F5F67400CAAAAC /* image9.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DFF60D3020F5F67300CAAAAC /* image9.jpeg */; };
+		DFF60D3D20F5F67400CAAAAC /* image10.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DFF60D3120F5F67300CAAAAC /* image10.jpeg */; };
+		DFF60D4020F5F8C900CAAAAC /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF60D3F20F5F8C900CAAAAC /* UIImage+Extension.m */; };
+		DFF60D4220F5FDAF00CAAAAC /* head.png in Resources */ = {isa = PBXBuildFile; fileRef = DFF60D4120F5FDAF00CAAAAC /* head.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +96,9 @@
 		C1748C4CCC4CF76D725F1EF0 /* Pods-FireLife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireLife.release.xcconfig"; path = "Pods/Target Support Files/Pods-FireLife/Pods-FireLife.release.xcconfig"; sourceTree = "<group>"; };
 		CD450182052EBF680F633DA4 /* libPods-FireLife.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FireLife.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0DEE4EC0D6DD16B6FB009F0 /* Pods-FireLife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireLife.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FireLife/Pods-FireLife.debug.xcconfig"; sourceTree = "<group>"; };
+		DF65661620F845C500B2FE3B /* BeautifViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BeautifViewController.h; sourceTree = "<group>"; };
+		DF65661720F845C500B2FE3B /* BeautifViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeautifViewController.m; sourceTree = "<group>"; };
+		DF65661820F845C500B2FE3B /* BeautifViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeautifViewController.xib; sourceTree = "<group>"; };
 		DFD39DF920F2FE5900170B32 /* CustomCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomCollectionViewCell.h; sourceTree = "<group>"; };
 		DFD39DFA20F2FE5900170B32 /* CustomCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomCollectionViewCell.m; sourceTree = "<group>"; };
 		DFD39DFB20F2FE5900170B32 /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -97,6 +120,10 @@
 		DFE2EFEA20EDF6A40098D51C /* TestManagerConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestManagerConfig.m; sourceTree = "<group>"; };
 		DFE2EFF020F0CBAE0098D51C /* UIColor+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
 		DFE2EFF120F0CBAE0098D51C /* UIColor+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
+		DFED5A3020F6E5540087F96F /* FLWaterfallCollectionLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLWaterfallCollectionLayout.h; sourceTree = "<group>"; };
+		DFED5A3120F6E5540087F96F /* FLWaterfallCollectionLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLWaterfallCollectionLayout.m; sourceTree = "<group>"; };
+		DFED5A3320F6FAA50087F96F /* FLWaterFloLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLWaterFloLayout.h; sourceTree = "<group>"; };
+		DFED5A3420F6FAA50087F96F /* FLWaterFloLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLWaterFloLayout.m; sourceTree = "<group>"; };
 		DFEDEE8E20E4C4A900D2714A /* FireLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFEDEE9120E4C4A900D2714A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DFEDEE9220E4C4A900D2714A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -143,6 +170,23 @@
 		DFEDEF0820E618CE00D2714A /* LiveViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LiveViewController.xib; sourceTree = "<group>"; };
 		DFEDEF0B20E61ABF00D2714A /* FLExceptionHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLExceptionHandle.h; sourceTree = "<group>"; };
 		DFEDEF0C20E61ABF00D2714A /* FLExceptionHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLExceptionHandle.m; sourceTree = "<group>"; };
+		DFF60D2220F5E85D00CAAAAC /* cell_bone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cell_bone.png; sourceTree = "<group>"; };
+		DFF60D2320F5E85D00CAAAAC /* cell_animal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cell_animal.png; sourceTree = "<group>"; };
+		DFF60D2620F5F67200CAAAAC /* image5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image5.jpeg; sourceTree = "<group>"; };
+		DFF60D2720F5F67200CAAAAC /* image11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image11.png; sourceTree = "<group>"; };
+		DFF60D2820F5F67200CAAAAC /* image6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image6.png; sourceTree = "<group>"; };
+		DFF60D2920F5F67300CAAAAC /* image1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpeg; sourceTree = "<group>"; };
+		DFF60D2A20F5F67300CAAAAC /* image7.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image7.jpeg; sourceTree = "<group>"; };
+		DFF60D2B20F5F67300CAAAAC /* image2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image2.jpeg; sourceTree = "<group>"; };
+		DFF60D2C20F5F67300CAAAAC /* image3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image3.jpeg; sourceTree = "<group>"; };
+		DFF60D2D20F5F67300CAAAAC /* imag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imag.png; sourceTree = "<group>"; };
+		DFF60D2E20F5F67300CAAAAC /* image4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image4.jpeg; sourceTree = "<group>"; };
+		DFF60D2F20F5F67300CAAAAC /* image8.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image8.jpeg; sourceTree = "<group>"; };
+		DFF60D3020F5F67300CAAAAC /* image9.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image9.jpeg; sourceTree = "<group>"; };
+		DFF60D3120F5F67300CAAAAC /* image10.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image10.jpeg; sourceTree = "<group>"; };
+		DFF60D3E20F5F8C900CAAAAC /* UIImage+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		DFF60D3F20F5F8C900CAAAAC /* UIImage+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		DFF60D4120F5FDAF00CAAAAC /* head.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = head.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +217,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DF65661320F842F700B2FE3B /* Beautify */ = {
+			isa = PBXGroup;
+			children = (
+				DF65661520F8436D00B2FE3B /* ViewController */,
+				DF65661420F8434100B2FE3B /* Handle */,
+			);
+			path = Beautify;
+			sourceTree = "<group>";
+		};
+		DF65661420F8434100B2FE3B /* Handle */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Handle;
+			sourceTree = "<group>";
+		};
+		DF65661520F8436D00B2FE3B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DF65661620F845C500B2FE3B /* BeautifViewController.h */,
+				DF65661720F845C500B2FE3B /* BeautifViewController.m */,
+				DF65661820F845C500B2FE3B /* BeautifViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		DFD39DF620F2FD4700170B32 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +268,10 @@
 			children = (
 				DFEDEEE020E4D68400D2714A /* SettingViewController.h */,
 				DFEDEEE120E4D68400D2714A /* SettingViewController.m */,
+				DFED5A3020F6E5540087F96F /* FLWaterfallCollectionLayout.h */,
+				DFED5A3120F6E5540087F96F /* FLWaterfallCollectionLayout.m */,
+				DFED5A3320F6FAA50087F96F /* FLWaterFloLayout.h */,
+				DFED5A3420F6FAA50087F96F /* FLWaterFloLayout.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -310,6 +384,8 @@
 			children = (
 				DFE2EFF020F0CBAE0098D51C /* UIColor+Extension.h */,
 				DFE2EFF120F0CBAE0098D51C /* UIColor+Extension.m */,
+				DFF60D3E20F5F8C900CAAAAC /* UIImage+Extension.h */,
+				DFF60D3F20F5F8C900CAAAAC /* UIImage+Extension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -377,6 +453,21 @@
 		DFEDEECB20E4CA2500D2714A /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				DFF60D4120F5FDAF00CAAAAC /* head.png */,
+				DFF60D2320F5E85D00CAAAAC /* cell_animal.png */,
+				DFF60D2D20F5F67300CAAAAC /* imag.png */,
+				DFF60D2920F5F67300CAAAAC /* image1.jpeg */,
+				DFF60D2B20F5F67300CAAAAC /* image2.jpeg */,
+				DFF60D2C20F5F67300CAAAAC /* image3.jpeg */,
+				DFF60D2E20F5F67300CAAAAC /* image4.jpeg */,
+				DFF60D2620F5F67200CAAAAC /* image5.jpeg */,
+				DFF60D2820F5F67200CAAAAC /* image6.png */,
+				DFF60D2A20F5F67300CAAAAC /* image7.jpeg */,
+				DFF60D2F20F5F67300CAAAAC /* image8.jpeg */,
+				DFF60D3020F5F67300CAAAAC /* image9.jpeg */,
+				DFF60D3120F5F67300CAAAAC /* image10.jpeg */,
+				DFF60D2720F5F67200CAAAAC /* image11.png */,
+				DFF60D2220F5E85D00CAAAAC /* cell_bone.png */,
 				DFD39E0220F337FE00170B32 /* wxpay.png */,
 				DFD39E0020F337EE00170B32 /* alipay.png */,
 				DFD39DFE20F3039F00170B32 /* placeHold.jpeg */,
@@ -429,6 +520,7 @@
 		DFEDEED020E4CC1A00D2714A /* Setting */ = {
 			isa = PBXGroup;
 			children = (
+				DF65661320F842F700B2FE3B /* Beautify */,
 				DFD39DF820F2FD5100170B32 /* ViewController */,
 				DFD39DF720F2FD4D00170B32 /* Model */,
 				DFD39DF620F2FD4700170B32 /* View */,
@@ -625,15 +717,31 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFF60D3D20F5F67400CAAAAC /* image10.jpeg in Resources */,
 				DFE2EFDD20EA0D570098D51C /* LoginViewController.xib in Resources */,
+				DFF60D4220F5FDAF00CAAAAC /* head.png in Resources */,
+				DFF60D2420F5E85D00CAAAAC /* cell_bone.png in Resources */,
+				DFF60D3B20F5F67400CAAAAC /* image8.jpeg in Resources */,
+				DFF60D3820F5F67400CAAAAC /* image3.jpeg in Resources */,
+				DFF60D3920F5F67400CAAAAC /* imag.png in Resources */,
 				DFEDEE9E20E4C4AA00D2714A /* LaunchScreen.storyboard in Resources */,
+				DFF60D3320F5F67400CAAAAC /* image11.png in Resources */,
+				DFF60D3C20F5F67400CAAAAC /* image9.jpeg in Resources */,
+				DFF60D3620F5F67400CAAAAC /* image7.jpeg in Resources */,
+				DFF60D2520F5E85D00CAAAAC /* cell_animal.png in Resources */,
 				DFD39E0820F3620300170B32 /* PersonalHeadView.xib in Resources */,
+				DFF60D3220F5F67400CAAAAC /* image5.jpeg in Resources */,
+				DFF60D3A20F5F67400CAAAAC /* image4.jpeg in Resources */,
 				DFEDEE9B20E4C4AA00D2714A /* Assets.xcassets in Resources */,
+				DFF60D3420F5F67400CAAAAC /* image6.png in Resources */,
+				DF65661A20F845C500B2FE3B /* BeautifViewController.xib in Resources */,
 				DFE2EFDF20EA0E1F0098D51C /* loginBg.png in Resources */,
 				DFEDEE9920E4C4A900D2714A /* Main.storyboard in Resources */,
+				DFF60D3520F5F67400CAAAAC /* image1.jpeg in Resources */,
 				DFD39DFF20F3039F00170B32 /* placeHold.jpeg in Resources */,
 				DFEDEF0A20E618CE00D2714A /* LiveViewController.xib in Resources */,
 				DFEDEEEB20E4D88500D2714A /* AdView.xib in Resources */,
+				DFF60D3720F5F67400CAAAAC /* image2.jpeg in Resources */,
 				DFD39DFD20F2FE5900170B32 /* CustomCollectionViewCell.xib in Resources */,
 				DFD39E0320F337FE00170B32 /* wxpay.png in Resources */,
 				DFD39E0120F337EE00170B32 /* alipay.png in Resources */,
@@ -723,6 +831,7 @@
 				DFEDEEFE20E4E1B800D2714A /* AdModel.m in Sources */,
 				DFEDEED820E4CE6C00D2714A /* FLTabBarView.m in Sources */,
 				DFEDEED520E4CE3400D2714A /* FLTabBarViewController.m in Sources */,
+				DFF60D4020F5F8C900CAAAAC /* UIImage+Extension.m in Sources */,
 				DFEDEE9620E4C4A900D2714A /* ViewController.m in Sources */,
 				DFD39E0620F361D500170B32 /* PersonalHeadView.m in Sources */,
 				DFEDEEA120E4C4AA00D2714A /* main.m in Sources */,
@@ -735,12 +844,15 @@
 				DFE2EFE320EA1DDB0098D51C /* UserManager.m in Sources */,
 				DFEDEEEE20E4DA7600D2714A /* FLCacheHelp.m in Sources */,
 				DFD39DFC20F2FE5900170B32 /* CustomCollectionViewCell.m in Sources */,
+				DF65661920F845C500B2FE3B /* BeautifViewController.m in Sources */,
 				DFEDEE9320E4C4A900D2714A /* AppDelegate.m in Sources */,
 				DFEDEF0D20E61ABF00D2714A /* FLExceptionHandle.m in Sources */,
 				DFEDEEF920E4E13000D2714A /* FLAdHandle.m in Sources */,
 				DFEDEEE220E4D68400D2714A /* SettingViewController.m in Sources */,
 				DFEDEEF120E4DB4000D2714A /* FLBaseHandle.m in Sources */,
+				DFED5A3220F6E5540087F96F /* FLWaterfallCollectionLayout.m in Sources */,
 				DFEDEEE920E4D86B00D2714A /* AdView.m in Sources */,
+				DFED5A3520F6FAA50087F96F /* FLWaterFloLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

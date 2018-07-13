@@ -80,13 +80,13 @@
         UIView * btn = [self subviews][i];
         if ([btn isKindOfClass:[UIButton class]]) {
             
-            btn.frame = CGRectMake((btn.tag - CLItemTypeHomePage) * width, 0, width, self.frame.size.height);
+            btn.frame = CGRectMake((btn.tag - CLItemTypeHomePage) * width, 0, width, 49);
             
         }
     }
     
     [self.cameraButton sizeToFit];
-    self.cameraButton.center = CGPointMake(self.bounds.size.width/2, self.bounds.size.height-50);
+    self.cameraButton.center = CGPointMake(self.bounds.size.width/2, self.bounds.size.height-TABBAR_HEIGHT+15);
     
 }
 -(void)itemClick:(UIButton *)button{

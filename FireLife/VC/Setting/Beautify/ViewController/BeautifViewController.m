@@ -1,29 +1,24 @@
 //
-//  LiveViewController.m
+//  BeautifViewController.m
 //  FireLife
 //
-//  Created by 王成龙 on 2018/6/29.
+//  Created by 王成龙 on 2018/7/13.
 //  Copyright © 2018年 charlie. All rights reserved.
 //
 
-#import "LiveViewController.h"
+#import "BeautifViewController.h"
 
-@interface LiveViewController ()
+@interface BeautifViewController ()
 
 @end
 
-@implementation LiveViewController
+@implementation BeautifViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Do any additional setup after loading the view from its nib.
-}
-- (IBAction)dismiss:(id)sender {
     
-    [self dismissViewControllerAnimated:true completion:^{
-        
-    }];
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning {

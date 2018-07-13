@@ -16,7 +16,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alipay.png" translatesAutoresizingMaskIntoConstraints="NO" id="f2v-wQ-LOS">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="head.png" translatesAutoresizingMaskIntoConstraints="NO" id="f2v-wQ-LOS">
                     <rect key="frame" x="147.5" y="50" width="80" height="80"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="80" id="Erp-6t-SLs"/>
@@ -59,7 +59,7 @@
                                     </subviews>
                                 </stackView>
                             </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstItem="QBH-kD-caU" firstAttribute="leading" secondItem="cgI-bq-7P4" secondAttribute="leading" id="LKO-gH-LXK"/>
                                 <constraint firstItem="QBH-kD-caU" firstAttribute="top" secondItem="cgI-bq-7P4" secondAttribute="top" id="ZlB-ai-YP9"/>
@@ -88,7 +88,7 @@
                                     </subviews>
                                 </stackView>
                             </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstItem="8J4-IW-aBp" firstAttribute="leading" secondItem="nkd-ps-QYL" secondAttribute="leading" id="GeL-eq-pX1"/>
                                 <constraint firstItem="8J4-IW-aBp" firstAttribute="top" secondItem="nkd-ps-QYL" secondAttribute="top" id="QbU-kM-0KZ"/>
@@ -117,7 +117,7 @@
                                     </subviews>
                                 </stackView>
                             </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstItem="58E-KD-r9P" firstAttribute="leading" secondItem="Ygs-m0-Fqo" secondAttribute="leading" id="0k1-AT-bPA"/>
                                 <constraint firstItem="58E-KD-r9P" firstAttribute="top" secondItem="Ygs-m0-Fqo" secondAttribute="top" id="BpW-sA-5Os"/>
@@ -131,7 +131,7 @@
                     </constraints>
                 </stackView>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="MXA-Pm-u1p" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="1De-Ah-Twr"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="sl1-ky-IVS" secondAttribute="trailing" constant="51" id="6Pm-Ze-lL5"/>
@@ -153,6 +153,6 @@
         </view>
     </objects>
     <resources>
-        <image name="alipay.png" width="26" height="26"/>
+        <image name="head.png" width="336" height="331"/>
     </resources>
 </document>
