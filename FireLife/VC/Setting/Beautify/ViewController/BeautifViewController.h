@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface BeautifViewController : UIViewController
+//待优化图片
+@property (nonatomic ,strong)UIImage *narmalImg;
 
 @end
