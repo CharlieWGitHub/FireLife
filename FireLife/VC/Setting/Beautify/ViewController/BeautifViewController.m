@@ -7,6 +7,7 @@
 //
 
 #import "BeautifViewController.h"
+#import "BeautifulHandle.h"
 
 @interface BeautifViewController ()<UIScrollViewDelegate>
 
@@ -24,6 +25,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [BeautifulHandle shareInstance];
     [self creatBeautiImg];
     [self creatSlideScrollView];
 }

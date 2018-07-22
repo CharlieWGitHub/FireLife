@@ -12,6 +12,7 @@
 		7633F4D82F4C7EF084E2676B /* libPods-FireLifeUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B70B514A63AEBD260BFD28D /* libPods-FireLifeUITests.a */; };
 		DF65661920F845C500B2FE3B /* BeautifViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF65661720F845C500B2FE3B /* BeautifViewController.m */; };
 		DF65661A20F845C500B2FE3B /* BeautifViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF65661820F845C500B2FE3B /* BeautifViewController.xib */; };
+		DFA7FAE72104B89400A12466 /* BeautifulHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA7FAE62104B89400A12466 /* BeautifulHandle.m */; };
 		DFD39DFC20F2FE5900170B32 /* CustomCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD39DFA20F2FE5900170B32 /* CustomCollectionViewCell.m */; };
 		DFD39DFD20F2FE5900170B32 /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFD39DFB20F2FE5900170B32 /* CustomCollectionViewCell.xib */; };
 		DFD39DFF20F3039F00170B32 /* placeHold.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DFD39DFE20F3039F00170B32 /* placeHold.jpeg */; };
@@ -99,6 +100,8 @@
 		DF65661620F845C500B2FE3B /* BeautifViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BeautifViewController.h; sourceTree = "<group>"; };
 		DF65661720F845C500B2FE3B /* BeautifViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeautifViewController.m; sourceTree = "<group>"; };
 		DF65661820F845C500B2FE3B /* BeautifViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeautifViewController.xib; sourceTree = "<group>"; };
+		DFA7FAE52104B89400A12466 /* BeautifulHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BeautifulHandle.h; sourceTree = "<group>"; };
+		DFA7FAE62104B89400A12466 /* BeautifulHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeautifulHandle.m; sourceTree = "<group>"; };
 		DFD39DF920F2FE5900170B32 /* CustomCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomCollectionViewCell.h; sourceTree = "<group>"; };
 		DFD39DFA20F2FE5900170B32 /* CustomCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomCollectionViewCell.m; sourceTree = "<group>"; };
 		DFD39DFB20F2FE5900170B32 /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -229,6 +232,8 @@
 		DF65661420F8434100B2FE3B /* Handle */ = {
 			isa = PBXGroup;
 			children = (
+				DFA7FAE52104B89400A12466 /* BeautifulHandle.h */,
+				DFA7FAE62104B89400A12466 /* BeautifulHandle.m */,
 			);
 			path = Handle;
 			sourceTree = "<group>";
@@ -831,6 +836,7 @@
 				DFEDEEFE20E4E1B800D2714A /* AdModel.m in Sources */,
 				DFEDEED820E4CE6C00D2714A /* FLTabBarView.m in Sources */,
 				DFEDEED520E4CE3400D2714A /* FLTabBarViewController.m in Sources */,
+				DFA7FAE72104B89400A12466 /* BeautifulHandle.m in Sources */,
 				DFF60D4020F5F8C900CAAAAC /* UIImage+Extension.m in Sources */,
 				DFEDEE9620E4C4A900D2714A /* ViewController.m in Sources */,
 				DFD39E0620F361D500170B32 /* PersonalHeadView.m in Sources */,
