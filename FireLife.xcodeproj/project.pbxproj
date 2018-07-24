@@ -10,6 +10,7 @@
 		515D54BA35442AD26E1F23B7 /* libPods-FireLife.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD450182052EBF680F633DA4 /* libPods-FireLife.a */; };
 		574EF5198A52B39A58AD224C /* libPods-FireLifeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9639516DE837EE8006A29B73 /* libPods-FireLifeTests.a */; };
 		7633F4D82F4C7EF084E2676B /* libPods-FireLifeUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B70B514A63AEBD260BFD28D /* libPods-FireLifeUITests.a */; };
+		DF4F76832106BD53009ED965 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4F76822106BD53009ED965 /* Person.m */; };
 		DF65661920F845C500B2FE3B /* BeautifViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF65661720F845C500B2FE3B /* BeautifViewController.m */; };
 		DF65661A20F845C500B2FE3B /* BeautifViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF65661820F845C500B2FE3B /* BeautifViewController.xib */; };
 		DFA7FAE72104B89400A12466 /* BeautifulHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA7FAE62104B89400A12466 /* BeautifulHandle.m */; };
@@ -97,6 +98,8 @@
 		C1748C4CCC4CF76D725F1EF0 /* Pods-FireLife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireLife.release.xcconfig"; path = "Pods/Target Support Files/Pods-FireLife/Pods-FireLife.release.xcconfig"; sourceTree = "<group>"; };
 		CD450182052EBF680F633DA4 /* libPods-FireLife.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FireLife.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0DEE4EC0D6DD16B6FB009F0 /* Pods-FireLife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireLife.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FireLife/Pods-FireLife.debug.xcconfig"; sourceTree = "<group>"; };
+		DF4F76812106BD53009ED965 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		DF4F76822106BD53009ED965 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		DF65661620F845C500B2FE3B /* BeautifViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BeautifViewController.h; sourceTree = "<group>"; };
 		DF65661720F845C500B2FE3B /* BeautifViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeautifViewController.m; sourceTree = "<group>"; };
 		DF65661820F845C500B2FE3B /* BeautifViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeautifViewController.xib; sourceTree = "<group>"; };
@@ -220,6 +223,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DF4F767F2106BD2D009ED965 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				DFEDEEDD20E4D66E00D2714A /* HomePageViewController.h */,
+				DFEDEEDE20E4D66E00D2714A /* HomePageViewController.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		DF4F76802106BD3A009ED965 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DF4F76812106BD53009ED965 /* Person.h */,
+				DF4F76822106BD53009ED965 /* Person.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		DF65661320F842F700B2FE3B /* Beautify */ = {
 			isa = PBXGroup;
 			children = (
@@ -516,8 +537,8 @@
 		DFEDEECF20E4CC0E00D2714A /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
-				DFEDEEDD20E4D66E00D2714A /* HomePageViewController.h */,
-				DFEDEEDE20E4D66E00D2714A /* HomePageViewController.m */,
+				DF4F76802106BD3A009ED965 /* Model */,
+				DF4F767F2106BD2D009ED965 /* VC */,
 			);
 			path = HomePage;
 			sourceTree = "<group>";
@@ -853,6 +874,7 @@
 				DF65661920F845C500B2FE3B /* BeautifViewController.m in Sources */,
 				DFEDEE9320E4C4A900D2714A /* AppDelegate.m in Sources */,
 				DFEDEF0D20E61ABF00D2714A /* FLExceptionHandle.m in Sources */,
+				DF4F76832106BD53009ED965 /* Person.m in Sources */,
 				DFEDEEF920E4E13000D2714A /* FLAdHandle.m in Sources */,
 				DFEDEEE220E4D68400D2714A /* SettingViewController.m in Sources */,
 				DFEDEEF120E4DB4000D2714A /* FLBaseHandle.m in Sources */,

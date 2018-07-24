@@ -7,6 +7,7 @@
 //
 
 #import "HomePageViewController.h"
+#import "Person.h"
 
 @interface HomePageViewController ()
 
@@ -17,6 +18,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"首页";
+    
+    Person * per =[[Person alloc]init];
+    [per run];
+    [[per runOneMeter]eatApple];
+ 
+    per.eatFood(@"banana").sleep(10);
     
     // Do any additional setup after loading the view.
 }
