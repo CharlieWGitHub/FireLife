@@ -7,8 +7,10 @@
 //
 
 #import "LeftViewController.h"
+#import "FLHomeHandle.h"
 
 @interface LeftViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *textF;
 
 @end
 
@@ -16,7 +18,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+}
+
+- (IBAction)checked:(id)sender {
+
+    if (![FLHomeHandle validateIdentityCard:self.textF.text]) {
+        NSLog(@"请填写正确身份证号码");
+    }else{
+        NSLog(@"正确身份证号码");
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning {

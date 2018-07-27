@@ -10,4 +10,6 @@
 
 @interface FLHomeHandle : NSObject
 
++ (BOOL)validateIdentityCard:(NSString *)identityCard;
+
 @end

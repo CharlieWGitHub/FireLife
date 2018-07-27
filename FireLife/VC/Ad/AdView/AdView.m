@@ -29,7 +29,7 @@
     //展示广告
     [self showAD];
     //下载广告
-    [self loadAD];
+    [self inviteParent];
     //倒计时
     [self startTime];
 }
@@ -46,10 +46,58 @@
         NSLog(@"111");
     } else {
         NSLog(@"222");
+        self.adImageView.image = [UIImage imageNamed:@"imag.png"];
         self.hidden = YES;
     }
 }
+-(void)judgeUpDateVersion{
+    
+    BOOL sameDateFlag = NO;
+    
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"yyyy-MM-dd"];
+    NSString *nowday = [formatter stringFromDate:[NSDate date]];
+    NSString *saveDay = [[NSUserDefaults standardUserDefaults] objectForKey:@"versionUpdateKey"];
+    if (saveDay == nil) {
+        saveDay = @"";
+    }
+    
+    if (![saveDay isEqualToString:nowday]) { //假如不是同一天，更新存储的日期，并且把flag置为YES
+        [[NSUserDefaults standardUserDefaults] setObject:nowday forKey:@"versionUpdateKey"];
+        sameDateFlag = YES;
+    }
+    if (sameDateFlag) {
+//        [self newVersionUpdateProcedure];
+    }
+}
 
+
+- (void)inviteParent{
+    
+    
+    
+    NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+    NSDate *now = [NSDate date];
+    NSDate *agoDate = [userDefault objectForKey:@"nowDate"];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd"];
+  
+    NSString *ageDateString = [dateFormatter stringFromDate:agoDate];
+    NSString *nowDateString = [dateFormatter stringFromDate:now];
+    if ([ageDateString isEqualToString:nowDateString]) {
+        NSLog(@"一天一次");
+        [self loadAD];
+    }else{
+        [self loadAD];
+        //保存一下登录时间时间
+        NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+        NSDate *now = [NSDate date];
+        [userDefault setObject:now forKey:@"nowDate"];
+        [userDefault synchronize];
+    }
+    
+
+}
 - (void)loadAD{
  
     [FLAdHandle executeGetAdvertiseTaskWithSuccess:^(id obj) {

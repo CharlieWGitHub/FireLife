@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D173DE3CAEBAEE9CB58C085FC3673CF3"
+               BlueprintIdentifier = "A21D9934E7F6212E32372A36CED52C72"
                BlueprintName = "ZYSuspensionView"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "libZYSuspensionView.a">
