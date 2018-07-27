@@ -9,6 +9,7 @@
 #import "BeautifViewController.h"
 
 @interface BeautifViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *beautImage;
 
 @end
 
