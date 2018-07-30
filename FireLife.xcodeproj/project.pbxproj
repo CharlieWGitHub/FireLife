@@ -10,8 +10,17 @@
 		515D54BA35442AD26E1F23B7 /* libPods-FireLife.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD450182052EBF680F633DA4 /* libPods-FireLife.a */; };
 		574EF5198A52B39A58AD224C /* libPods-FireLifeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9639516DE837EE8006A29B73 /* libPods-FireLifeTests.a */; };
 		7633F4D82F4C7EF084E2676B /* libPods-FireLifeUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B70B514A63AEBD260BFD28D /* libPods-FireLifeUITests.a */; };
+		DF32EF2C210813D100CC724B /* UILabel+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = DF32EF2B210813D100CC724B /* UILabel+Extension.m */; };
+		DF4F76832106BD53009ED965 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4F76822106BD53009ED965 /* Person.m */; };
+		DF5E16182109A1060056B956 /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5E16162109A1060056B956 /* LeftViewController.m */; };
+		DF5E16192109A1060056B956 /* LeftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF5E16172109A1060056B956 /* LeftViewController.xib */; };
+		DF5E161C2109A23C0056B956 /* FLHomeHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5E161B2109A23C0056B956 /* FLHomeHandle.m */; };
+		DF5E161F2109C3AA0056B956 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DF5E161E2109C3AA0056B956 /* libsqlite3.0.tbd */; };
+		DF5E16222109C3F80056B956 /* FLFMDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5E16212109C3F80056B956 /* FLFMDBManager.m */; };
 		DF65661920F845C500B2FE3B /* BeautifViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF65661720F845C500B2FE3B /* BeautifViewController.m */; };
 		DF65661A20F845C500B2FE3B /* BeautifViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF65661820F845C500B2FE3B /* BeautifViewController.xib */; };
+		DFA7FAE72104B89400A12466 /* BeautifulHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA7FAE62104B89400A12466 /* BeautifulHandle.m */; };
+		DFD03810210E939F00F1CEDD /* personModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD0380F210E939F00F1CEDD /* personModel.m */; };
 		DFD39DFC20F2FE5900170B32 /* CustomCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD39DFA20F2FE5900170B32 /* CustomCollectionViewCell.m */; };
 		DFD39DFD20F2FE5900170B32 /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFD39DFB20F2FE5900170B32 /* CustomCollectionViewCell.xib */; };
 		DFD39DFF20F3039F00170B32 /* placeHold.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DFD39DFE20F3039F00170B32 /* placeHold.jpeg */; };
@@ -96,9 +105,25 @@
 		C1748C4CCC4CF76D725F1EF0 /* Pods-FireLife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireLife.release.xcconfig"; path = "Pods/Target Support Files/Pods-FireLife/Pods-FireLife.release.xcconfig"; sourceTree = "<group>"; };
 		CD450182052EBF680F633DA4 /* libPods-FireLife.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FireLife.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0DEE4EC0D6DD16B6FB009F0 /* Pods-FireLife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireLife.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FireLife/Pods-FireLife.debug.xcconfig"; sourceTree = "<group>"; };
+		DF32EF2A210813D100CC724B /* UILabel+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+Extension.h"; sourceTree = "<group>"; };
+		DF32EF2B210813D100CC724B /* UILabel+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Extension.m"; sourceTree = "<group>"; };
+		DF4F76812106BD53009ED965 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		DF4F76822106BD53009ED965 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		DF5E16152109A1060056B956 /* LeftViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
+		DF5E16162109A1060056B956 /* LeftViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
+		DF5E16172109A1060056B956 /* LeftViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeftViewController.xib; sourceTree = "<group>"; };
+		DF5E161A2109A23C0056B956 /* FLHomeHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLHomeHandle.h; sourceTree = "<group>"; };
+		DF5E161B2109A23C0056B956 /* FLHomeHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLHomeHandle.m; sourceTree = "<group>"; };
+		DF5E161E2109C3AA0056B956 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		DF5E16202109C3F80056B956 /* FLFMDBManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLFMDBManager.h; sourceTree = "<group>"; };
+		DF5E16212109C3F80056B956 /* FLFMDBManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLFMDBManager.m; sourceTree = "<group>"; };
 		DF65661620F845C500B2FE3B /* BeautifViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BeautifViewController.h; sourceTree = "<group>"; };
 		DF65661720F845C500B2FE3B /* BeautifViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeautifViewController.m; sourceTree = "<group>"; };
 		DF65661820F845C500B2FE3B /* BeautifViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeautifViewController.xib; sourceTree = "<group>"; };
+		DFA7FAE52104B89400A12466 /* BeautifulHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BeautifulHandle.h; sourceTree = "<group>"; };
+		DFA7FAE62104B89400A12466 /* BeautifulHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeautifulHandle.m; sourceTree = "<group>"; };
+		DFD0380E210E939F00F1CEDD /* personModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = personModel.h; sourceTree = "<group>"; };
+		DFD0380F210E939F00F1CEDD /* personModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = personModel.m; sourceTree = "<group>"; };
 		DFD39DF920F2FE5900170B32 /* CustomCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomCollectionViewCell.h; sourceTree = "<group>"; };
 		DFD39DFA20F2FE5900170B32 /* CustomCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomCollectionViewCell.m; sourceTree = "<group>"; };
 		DFD39DFB20F2FE5900170B32 /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -194,6 +219,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF5E161F2109C3AA0056B956 /* libsqlite3.0.tbd in Frameworks */,
 				515D54BA35442AD26E1F23B7 /* libPods-FireLife.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,6 +243,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DF4F767F2106BD2D009ED965 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				DFEDEEDD20E4D66E00D2714A /* HomePageViewController.h */,
+				DFEDEEDE20E4D66E00D2714A /* HomePageViewController.m */,
+				DF5E16152109A1060056B956 /* LeftViewController.h */,
+				DF5E16162109A1060056B956 /* LeftViewController.m */,
+				DF5E16172109A1060056B956 /* LeftViewController.xib */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		DF4F76802106BD3A009ED965 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DF4F76812106BD53009ED965 /* Person.h */,
+				DF4F76822106BD53009ED965 /* Person.m */,
+				DF5E161A2109A23C0056B956 /* FLHomeHandle.h */,
+				DF5E161B2109A23C0056B956 /* FLHomeHandle.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DF5E161D2109B4D80056B956 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				DF5E16202109C3F80056B956 /* FLFMDBManager.h */,
+				DF5E16212109C3F80056B956 /* FLFMDBManager.m */,
+				DFD0380E210E939F00F1CEDD /* personModel.h */,
+				DFD0380F210E939F00F1CEDD /* personModel.m */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
 		DF65661320F842F700B2FE3B /* Beautify */ = {
 			isa = PBXGroup;
 			children = (
@@ -229,6 +289,8 @@
 		DF65661420F8434100B2FE3B /* Handle */ = {
 			isa = PBXGroup;
 			children = (
+				DFA7FAE52104B89400A12466 /* BeautifulHandle.h */,
+				DFA7FAE62104B89400A12466 /* BeautifulHandle.m */,
 			);
 			path = Handle;
 			sourceTree = "<group>";
@@ -372,6 +434,7 @@
 		DFEDEEC320E4C95400D2714A /* Expand */ = {
 			isa = PBXGroup;
 			children = (
+				DF5E161D2109B4D80056B956 /* Storage */,
 				DFEDEEC620E4C98D00D2714A /* Macros */,
 				DFEDEEC520E4C98400D2714A /* Tool */,
 				DFEDEEC420E4C97300D2714A /* Category */,
@@ -386,6 +449,8 @@
 				DFE2EFF120F0CBAE0098D51C /* UIColor+Extension.m */,
 				DFF60D3E20F5F8C900CAAAAC /* UIImage+Extension.h */,
 				DFF60D3F20F5F8C900CAAAAC /* UIImage+Extension.m */,
+				DF32EF2A210813D100CC724B /* UILabel+Extension.h */,
+				DF32EF2B210813D100CC724B /* UILabel+Extension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -511,8 +576,8 @@
 		DFEDEECF20E4CC0E00D2714A /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
-				DFEDEEDD20E4D66E00D2714A /* HomePageViewController.h */,
-				DFEDEEDE20E4D66E00D2714A /* HomePageViewController.m */,
+				DF4F76802106BD3A009ED965 /* Model */,
+				DF4F767F2106BD2D009ED965 /* VC */,
 			);
 			path = HomePage;
 			sourceTree = "<group>";
@@ -604,6 +669,7 @@
 		FACEDF2355E34B3F67C4E221 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DF5E161E2109C3AA0056B956 /* libsqlite3.0.tbd */,
 				CD450182052EBF680F633DA4 /* libPods-FireLife.a */,
 				9639516DE837EE8006A29B73 /* libPods-FireLifeTests.a */,
 				9B70B514A63AEBD260BFD28D /* libPods-FireLifeUITests.a */,
@@ -742,6 +808,7 @@
 				DFEDEF0A20E618CE00D2714A /* LiveViewController.xib in Resources */,
 				DFEDEEEB20E4D88500D2714A /* AdView.xib in Resources */,
 				DFF60D3720F5F67400CAAAAC /* image2.jpeg in Resources */,
+				DF5E16192109A1060056B956 /* LeftViewController.xib in Resources */,
 				DFD39DFD20F2FE5900170B32 /* CustomCollectionViewCell.xib in Resources */,
 				DFD39E0320F337FE00170B32 /* wxpay.png in Resources */,
 				DFD39E0120F337EE00170B32 /* alipay.png in Resources */,
@@ -831,22 +898,29 @@
 				DFEDEEFE20E4E1B800D2714A /* AdModel.m in Sources */,
 				DFEDEED820E4CE6C00D2714A /* FLTabBarView.m in Sources */,
 				DFEDEED520E4CE3400D2714A /* FLTabBarViewController.m in Sources */,
+				DFA7FAE72104B89400A12466 /* BeautifulHandle.m in Sources */,
 				DFF60D4020F5F8C900CAAAAC /* UIImage+Extension.m in Sources */,
 				DFEDEE9620E4C4A900D2714A /* ViewController.m in Sources */,
 				DFD39E0620F361D500170B32 /* PersonalHeadView.m in Sources */,
+				DF5E16182109A1060056B956 /* LeftViewController.m in Sources */,
 				DFEDEEA120E4C4AA00D2714A /* main.m in Sources */,
 				DFE2EFEB20EDF6A40098D51C /* TestManagerConfig.m in Sources */,
 				DFEDEEDF20E4D66E00D2714A /* HomePageViewController.m in Sources */,
 				DFE2EFDC20EA0D570098D51C /* LoginViewController.m in Sources */,
 				DFE2EFF220F0CBAE0098D51C /* UIColor+Extension.m in Sources */,
 				DFEDEEF420E4DBC900D2714A /* HttpTool.m in Sources */,
+				DF5E161C2109A23C0056B956 /* FLHomeHandle.m in Sources */,
 				DFEDEEDB20E4D07A00D2714A /* FLNavigationViewController.m in Sources */,
+				DFD03810210E939F00F1CEDD /* personModel.m in Sources */,
 				DFE2EFE320EA1DDB0098D51C /* UserManager.m in Sources */,
 				DFEDEEEE20E4DA7600D2714A /* FLCacheHelp.m in Sources */,
+				DF32EF2C210813D100CC724B /* UILabel+Extension.m in Sources */,
 				DFD39DFC20F2FE5900170B32 /* CustomCollectionViewCell.m in Sources */,
+				DF5E16222109C3F80056B956 /* FLFMDBManager.m in Sources */,
 				DF65661920F845C500B2FE3B /* BeautifViewController.m in Sources */,
 				DFEDEE9320E4C4A900D2714A /* AppDelegate.m in Sources */,
 				DFEDEF0D20E61ABF00D2714A /* FLExceptionHandle.m in Sources */,
+				DF4F76832106BD53009ED965 /* Person.m in Sources */,
 				DFEDEEF920E4E13000D2714A /* FLAdHandle.m in Sources */,
 				DFEDEEE220E4D68400D2714A /* SettingViewController.m in Sources */,
 				DFEDEEF120E4DB4000D2714A /* FLBaseHandle.m in Sources */,
@@ -1026,7 +1100,7 @@
 				DEVELOPMENT_TEAM = Z3L8JB7WBX;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/FireLife/Expand/Macros/FLHeader.pch";
 				INFOPLIST_FILE = FireLife/Resource/Plist/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1046,7 +1120,7 @@
 				DEVELOPMENT_TEAM = Z3L8JB7WBX;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/FireLife/Expand/Macros/FLHeader.pch";
 				INFOPLIST_FILE = FireLife/Resource/Plist/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
