@@ -61,13 +61,14 @@
     [super viewDidLoad];
     self.navigationItem.title = @"首页";
     [self creatView];
-    [self creatTime];
+//    [self creatTime];
     
     UIBarButtonItem * left = [[UIBarButtonItem alloc]initWithTitle:@"left" style:UIBarButtonItemStyleDone target:self action:@selector(leftClicked)];
     self.navigationItem.leftBarButtonItem = left;
 }
 
 - (void)leftClicked{
+    
     LeftViewController * left = [[LeftViewController alloc]init];
     left.hidesBottomBarWhenPushed =YES;
     [self.navigationController pushViewController:left animated:YES];

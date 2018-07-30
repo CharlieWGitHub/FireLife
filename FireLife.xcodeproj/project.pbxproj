@@ -20,6 +20,7 @@
 		DF65661920F845C500B2FE3B /* BeautifViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF65661720F845C500B2FE3B /* BeautifViewController.m */; };
 		DF65661A20F845C500B2FE3B /* BeautifViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF65661820F845C500B2FE3B /* BeautifViewController.xib */; };
 		DFA7FAE72104B89400A12466 /* BeautifulHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA7FAE62104B89400A12466 /* BeautifulHandle.m */; };
+		DFD03810210E939F00F1CEDD /* personModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD0380F210E939F00F1CEDD /* personModel.m */; };
 		DFD39DFC20F2FE5900170B32 /* CustomCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD39DFA20F2FE5900170B32 /* CustomCollectionViewCell.m */; };
 		DFD39DFD20F2FE5900170B32 /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFD39DFB20F2FE5900170B32 /* CustomCollectionViewCell.xib */; };
 		DFD39DFF20F3039F00170B32 /* placeHold.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DFD39DFE20F3039F00170B32 /* placeHold.jpeg */; };
@@ -121,6 +122,8 @@
 		DF65661820F845C500B2FE3B /* BeautifViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeautifViewController.xib; sourceTree = "<group>"; };
 		DFA7FAE52104B89400A12466 /* BeautifulHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BeautifulHandle.h; sourceTree = "<group>"; };
 		DFA7FAE62104B89400A12466 /* BeautifulHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeautifulHandle.m; sourceTree = "<group>"; };
+		DFD0380E210E939F00F1CEDD /* personModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = personModel.h; sourceTree = "<group>"; };
+		DFD0380F210E939F00F1CEDD /* personModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = personModel.m; sourceTree = "<group>"; };
 		DFD39DF920F2FE5900170B32 /* CustomCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomCollectionViewCell.h; sourceTree = "<group>"; };
 		DFD39DFA20F2FE5900170B32 /* CustomCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomCollectionViewCell.m; sourceTree = "<group>"; };
 		DFD39DFB20F2FE5900170B32 /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -268,6 +271,8 @@
 			children = (
 				DF5E16202109C3F80056B956 /* FLFMDBManager.h */,
 				DF5E16212109C3F80056B956 /* FLFMDBManager.m */,
+				DFD0380E210E939F00F1CEDD /* personModel.h */,
+				DFD0380F210E939F00F1CEDD /* personModel.m */,
 			);
 			path = Storage;
 			sourceTree = "<group>";
@@ -906,6 +911,7 @@
 				DFEDEEF420E4DBC900D2714A /* HttpTool.m in Sources */,
 				DF5E161C2109A23C0056B956 /* FLHomeHandle.m in Sources */,
 				DFEDEEDB20E4D07A00D2714A /* FLNavigationViewController.m in Sources */,
+				DFD03810210E939F00F1CEDD /* personModel.m in Sources */,
 				DFE2EFE320EA1DDB0098D51C /* UserManager.m in Sources */,
 				DFEDEEEE20E4DA7600D2714A /* FLCacheHelp.m in Sources */,
 				DF32EF2C210813D100CC724B /* UILabel+Extension.m in Sources */,

@@ -7,18 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
-
+@class personModel;
 @interface FLFMDBManager : NSObject
 
 + (instancetype)shareInstence;
 //创建FMDB
 - (void)creatFMDB;
 //增加数据
-- (void)addOneRecords;
+- (void)addOneRecords:(personModel*)person;
 //删除
-- (void)removeOneRecords;
+- (void)deleteOneRecord:(personModel*)person;
+- (void)removeOneRecords:(personModel*)person;
 //改
-- (void)changeOneRecords;
+- (void)changeOneRecords:(personModel*)person;
 //查
 - (void)searchOneRecords;
 

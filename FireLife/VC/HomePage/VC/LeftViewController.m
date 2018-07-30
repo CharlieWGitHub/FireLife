@@ -8,6 +8,8 @@
 
 #import "LeftViewController.h"
 #import "FLHomeHandle.h"
+#import "FLFMDBManager.h"
+#import "personModel.h"
 
 @interface LeftViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *textF;
@@ -18,6 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [[FLFMDBManager shareInstence]creatFMDB];
 }
 
 - (IBAction)checked:(id)sender {
@@ -27,8 +30,32 @@
     }else{
         NSLog(@"正确身份证号码");
     }
+}
+- (IBAction)addPerson:(id)sender {
+    personModel * model = [[personModel alloc]init];
+    model.ID = 13;
+    model.name = @"charlie";
+    model.age  = 12;
+    [[FLFMDBManager shareInstence]addOneRecords:model];
     
 }
+- (IBAction)delPerson:(id)sender {
+    
+    [[FLFMDBManager shareInstence]deleteOneRecord:nil];
+    
+}
+- (IBAction)changePerson:(id)sender {
+    personModel * model = [[personModel alloc]init];
+    model.ID = 12;
+    model.name = @"charlie";
+    model.age  = 120;
+    [[FLFMDBManager shareInstence]changeOneRecords:model];
+    
+}
+- (IBAction)findPerson:(id)sender {
+    [[FLFMDBManager shareInstence] searchOneRecords];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
