@@ -14,6 +14,7 @@
 #import "PersonalHeadView.h"
 #import "UIImage+Extension.h"
 #import "FLWaterFloLayout.h"
+#import "BeautifViewController.h"
 
 @interface SettingViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,FLWaterFloLayoutDelegate>
 
@@ -252,6 +253,10 @@ static NSString *const footerId = @"footerId";
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     QDLog(@"-------%ld--------",(long)indexPath.row);
+    BeautifViewController * beauti = [[BeautifViewController alloc]init];
+    [self presentViewController:beauti animated:true completion:^{
+        
+    }];
 }
 
 // 长按某item，弹出copy和paste的菜单

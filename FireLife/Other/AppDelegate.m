@@ -22,19 +22,20 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
+
     //根据归档是否有无userManager对象，选择不同的根控制器
     UserManager *userManager = [UserManagerTool userManager];
-    AdView * view = [AdView loadAdvertiseView];
-    [self.window addSubview:view];
-    
     if (userManager) {
+        AdView * view = [AdView loadAdvertiseView];
+        [self.window addSubview:view];
+        
         FLTabBarViewController * main = [[FLTabBarViewController alloc]init];
         self.window.rootViewController = main;
         [self.window makeKeyAndVisible];
        
     } else {
-       
+      
+        
         LoginViewController * vc = [[LoginViewController alloc]init];
         self.window.rootViewController = vc;
         

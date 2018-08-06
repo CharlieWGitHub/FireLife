@@ -16,7 +16,7 @@
 }
 //保存本地
 + (void)setAdvertise:(NSString *)adImage{
-    [[NSUserDefaults standardUserDefaults]setObject:adImage forKey:advertiseImage];
+    [[NSUserDefaults standardUserDefaults] setObject:adImage forKey:advertiseImage];
     [[NSUserDefaults standardUserDefaults]synchronize];
 }
 
