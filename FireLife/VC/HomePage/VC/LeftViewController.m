@@ -20,7 +20,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+ 
     [[FLFMDBManager shareInstence]creatFMDB];
+    
 }
 
 - (IBAction)checked:(id)sender {

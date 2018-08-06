@@ -76,6 +76,14 @@
 		DFF60D3D20F5F67400CAAAAC /* image10.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DFF60D3120F5F67300CAAAAC /* image10.jpeg */; };
 		DFF60D4020F5F8C900CAAAAC /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF60D3F20F5F8C900CAAAAC /* UIImage+Extension.m */; };
 		DFF60D4220F5FDAF00CAAAAC /* head.png in Resources */ = {isa = PBXBuildFile; fileRef = DFF60D4120F5FDAF00CAAAAC /* head.png */; };
+		E90778522111A19E00FF9EA4 /* common01_back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E90778502111A19E00FF9EA4 /* common01_back@3x.png */; };
+		E90778532111A19E00FF9EA4 /* common01_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E90778512111A19E00FF9EA4 /* common01_back@2x.png */; };
+		E90778562111AF3900FF9EA4 /* UIViewController+CustomBackButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E90778552111AF3900FF9EA4 /* UIViewController+CustomBackButton.m */; };
+		E96F353321181E2F00FAB66C /* OpenCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E96F353221181E2F00FAB66C /* OpenCellViewController.m */; };
+		E96F353A2118224B00FAB66C /* CellFrameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E96F35392118224B00FAB66C /* CellFrameModel.m */; };
+		E96F353D2118225A00FAB66C /* CellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E96F353C2118225A00FAB66C /* CellModel.m */; };
+		E96F35402118228400FAB66C /* CellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E96F353F2118228400FAB66C /* CellTableViewCell.m */; };
+		E96F35432118441500FAB66C /* CellHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = E96F35422118441500FAB66C /* CellHelp.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -212,6 +220,20 @@
 		DFF60D3E20F5F8C900CAAAAC /* UIImage+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
 		DFF60D3F20F5F8C900CAAAAC /* UIImage+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
 		DFF60D4120F5FDAF00CAAAAC /* head.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = head.png; sourceTree = "<group>"; };
+		E90778502111A19E00FF9EA4 /* common01_back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "common01_back@3x.png"; sourceTree = "<group>"; };
+		E90778512111A19E00FF9EA4 /* common01_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "common01_back@2x.png"; sourceTree = "<group>"; };
+		E90778542111AF3900FF9EA4 /* UIViewController+CustomBackButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CustomBackButton.h"; sourceTree = "<group>"; };
+		E90778552111AF3900FF9EA4 /* UIViewController+CustomBackButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CustomBackButton.m"; sourceTree = "<group>"; };
+		E96F353121181E2F00FAB66C /* OpenCellViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCellViewController.h; sourceTree = "<group>"; };
+		E96F353221181E2F00FAB66C /* OpenCellViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenCellViewController.m; sourceTree = "<group>"; };
+		E96F35382118224B00FAB66C /* CellFrameModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CellFrameModel.h; sourceTree = "<group>"; };
+		E96F35392118224B00FAB66C /* CellFrameModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CellFrameModel.m; sourceTree = "<group>"; };
+		E96F353B2118225A00FAB66C /* CellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CellModel.h; sourceTree = "<group>"; };
+		E96F353C2118225A00FAB66C /* CellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CellModel.m; sourceTree = "<group>"; };
+		E96F353E2118228400FAB66C /* CellTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CellTableViewCell.h; sourceTree = "<group>"; };
+		E96F353F2118228400FAB66C /* CellTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CellTableViewCell.m; sourceTree = "<group>"; };
+		E96F35412118441500FAB66C /* CellHelp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CellHelp.h; sourceTree = "<group>"; };
+		E96F35422118441500FAB66C /* CellHelp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CellHelp.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -451,6 +473,8 @@
 				DFF60D3F20F5F8C900CAAAAC /* UIImage+Extension.m */,
 				DF32EF2A210813D100CC724B /* UILabel+Extension.h */,
 				DF32EF2B210813D100CC724B /* UILabel+Extension.m */,
+				E90778542111AF3900FF9EA4 /* UIViewController+CustomBackButton.h */,
+				E90778552111AF3900FF9EA4 /* UIViewController+CustomBackButton.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -464,6 +488,8 @@
 				DFEDEEF020E4DB4000D2714A /* FLBaseHandle.m */,
 				DFEDEF0B20E61ABF00D2714A /* FLExceptionHandle.h */,
 				DFEDEF0C20E61ABF00D2714A /* FLExceptionHandle.m */,
+				E96F35412118441500FAB66C /* CellHelp.h */,
+				E96F35422118441500FAB66C /* CellHelp.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -518,6 +544,8 @@
 		DFEDEECB20E4CA2500D2714A /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				E90778512111A19E00FF9EA4 /* common01_back@2x.png */,
+				E90778502111A19E00FF9EA4 /* common01_back@3x.png */,
 				DFF60D4120F5FDAF00CAAAAC /* head.png */,
 				DFF60D2320F5E85D00CAAAAC /* cell_animal.png */,
 				DFF60D2D20F5F67300CAAAAC /* imag.png */,
@@ -576,6 +604,7 @@
 		DFEDEECF20E4CC0E00D2714A /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
+				E96F3534211821F600FAB66C /* openCell */,
 				DF4F76802106BD3A009ED965 /* Model */,
 				DF4F767F2106BD2D009ED965 /* VC */,
 			);
@@ -651,6 +680,45 @@
 				DFEDEEEA20E4D88500D2714A /* AdView.xib */,
 			);
 			path = AdView;
+			sourceTree = "<group>";
+		};
+		E96F3534211821F600FAB66C /* openCell */ = {
+			isa = PBXGroup;
+			children = (
+				E96F35372118221300FAB66C /* View */,
+				E96F35362118220B00FAB66C /* Model */,
+				E96F35352118220000FAB66C /* VC */,
+			);
+			path = openCell;
+			sourceTree = "<group>";
+		};
+		E96F35352118220000FAB66C /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				E96F353121181E2F00FAB66C /* OpenCellViewController.h */,
+				E96F353221181E2F00FAB66C /* OpenCellViewController.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		E96F35362118220B00FAB66C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E96F35382118224B00FAB66C /* CellFrameModel.h */,
+				E96F35392118224B00FAB66C /* CellFrameModel.m */,
+				E96F353B2118225A00FAB66C /* CellModel.h */,
+				E96F353C2118225A00FAB66C /* CellModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E96F35372118221300FAB66C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E96F353E2118228400FAB66C /* CellTableViewCell.h */,
+				E96F353F2118228400FAB66C /* CellTableViewCell.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		ED15DB9D80334DDBA1091137 /* Pods */ = {
@@ -793,6 +861,7 @@
 				DFEDEE9E20E4C4AA00D2714A /* LaunchScreen.storyboard in Resources */,
 				DFF60D3320F5F67400CAAAAC /* image11.png in Resources */,
 				DFF60D3C20F5F67400CAAAAC /* image9.jpeg in Resources */,
+				E90778522111A19E00FF9EA4 /* common01_back@3x.png in Resources */,
 				DFF60D3620F5F67400CAAAAC /* image7.jpeg in Resources */,
 				DFF60D2520F5E85D00CAAAAC /* cell_animal.png in Resources */,
 				DFD39E0820F3620300170B32 /* PersonalHeadView.xib in Resources */,
@@ -811,6 +880,7 @@
 				DF5E16192109A1060056B956 /* LeftViewController.xib in Resources */,
 				DFD39DFD20F2FE5900170B32 /* CustomCollectionViewCell.xib in Resources */,
 				DFD39E0320F337FE00170B32 /* wxpay.png in Resources */,
+				E90778532111A19E00FF9EA4 /* common01_back@2x.png in Resources */,
 				DFD39E0120F337EE00170B32 /* alipay.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -901,6 +971,8 @@
 				DFA7FAE72104B89400A12466 /* BeautifulHandle.m in Sources */,
 				DFF60D4020F5F8C900CAAAAC /* UIImage+Extension.m in Sources */,
 				DFEDEE9620E4C4A900D2714A /* ViewController.m in Sources */,
+				E90778562111AF3900FF9EA4 /* UIViewController+CustomBackButton.m in Sources */,
+				E96F353D2118225A00FAB66C /* CellModel.m in Sources */,
 				DFD39E0620F361D500170B32 /* PersonalHeadView.m in Sources */,
 				DF5E16182109A1060056B956 /* LeftViewController.m in Sources */,
 				DFEDEEA120E4C4AA00D2714A /* main.m in Sources */,
@@ -908,10 +980,12 @@
 				DFEDEEDF20E4D66E00D2714A /* HomePageViewController.m in Sources */,
 				DFE2EFDC20EA0D570098D51C /* LoginViewController.m in Sources */,
 				DFE2EFF220F0CBAE0098D51C /* UIColor+Extension.m in Sources */,
+				E96F353A2118224B00FAB66C /* CellFrameModel.m in Sources */,
 				DFEDEEF420E4DBC900D2714A /* HttpTool.m in Sources */,
 				DF5E161C2109A23C0056B956 /* FLHomeHandle.m in Sources */,
 				DFEDEEDB20E4D07A00D2714A /* FLNavigationViewController.m in Sources */,
 				DFD03810210E939F00F1CEDD /* personModel.m in Sources */,
+				E96F35432118441500FAB66C /* CellHelp.m in Sources */,
 				DFE2EFE320EA1DDB0098D51C /* UserManager.m in Sources */,
 				DFEDEEEE20E4DA7600D2714A /* FLCacheHelp.m in Sources */,
 				DF32EF2C210813D100CC724B /* UILabel+Extension.m in Sources */,
@@ -924,9 +998,11 @@
 				DFEDEEF920E4E13000D2714A /* FLAdHandle.m in Sources */,
 				DFEDEEE220E4D68400D2714A /* SettingViewController.m in Sources */,
 				DFEDEEF120E4DB4000D2714A /* FLBaseHandle.m in Sources */,
+				E96F353321181E2F00FAB66C /* OpenCellViewController.m in Sources */,
 				DFED5A3220F6E5540087F96F /* FLWaterfallCollectionLayout.m in Sources */,
 				DFEDEEE920E4D86B00D2714A /* AdView.m in Sources */,
 				DFED5A3520F6FAA50087F96F /* FLWaterFloLayout.m in Sources */,
+				E96F35402118228400FAB66C /* CellTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

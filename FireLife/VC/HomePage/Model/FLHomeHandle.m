@@ -9,6 +9,7 @@
 #import "FLHomeHandle.h"
 
 @implementation FLHomeHandle
+//验证身份证
 + (BOOL)validateIdentityCard: (NSString *)identityCard
 {
     BOOL flag;
