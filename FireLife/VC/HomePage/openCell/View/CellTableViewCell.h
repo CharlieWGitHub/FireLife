@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-@class CellFrameModel;
+#import "CellFrameModel.h"
 
 @interface CellTableViewCell : UITableViewCell
 

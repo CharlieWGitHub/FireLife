@@ -17,17 +17,28 @@
  背景
  */
 @property(nonatomic,assign)CGRect backViewFrame;
+@property(nonatomic,assign)CGRect backViewFrame2;
 
 /**
  箭头
  */
 @property(nonatomic,assign)CGRect arrowFrame;
 
+
+/**
+ 标题
+ */
+@property (nonatomic ,assign)CGRect titleFrame;
+
 /**
  文字
  */
 @property(nonatomic,assign)CGRect infolabFrame;
 
+/**
+ 渠道图片
+ */
+@property (nonatomic ,assign)CGRect signImgFrame;
 /**
  签约渠道背景
  */

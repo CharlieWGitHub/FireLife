@@ -31,6 +31,7 @@
     [self.contentView addSubview:self.backView];
     
     self.signImg = [[UIImageView alloc]init];
+    self.signImg.image = [UIImage imageNamed:@"qcq_btn_unionpay"];
     [self.backView addSubview:self.signImg];
     
     self.titleLab = [[UILabel alloc]init];
@@ -39,13 +40,37 @@
     
     self.infoLab = [[UILabel alloc]init];
     self.infoLab.font = [UIFont systemFontOfSize:15];
+    self.infoLab.numberOfLines = 0;
     [self.backView  addSubview:self.infoLab];
     
     self.arrowImg = [[UIImageView alloc]init];
+    self.arrowImg.image = [UIImage imageNamed:@"arrowdown"];
     [self.backView addSubview:self.arrowImg];
     
 }
-
+- (void)setCellFrameModel:(CellFrameModel *)cellFrameModel{
+    _cellFrameModel = cellFrameModel;
+   
+    self.titleLab.frame = cellFrameModel.titleFrame;
+    self.arrowImg.frame = cellFrameModel.arrowFrame;
+    self.signImg .frame = cellFrameModel.signImgFrame;
+    self.infoLab.frame  = cellFrameModel.infolabFrame;
+    
+    self.titleLab.text = cellFrameModel.cellModel.titleLab;
+    self.infoLab.text  = cellFrameModel.cellModel.infoLab;
+    self.signImg.image = [UIImage imageNamed:cellFrameModel.cellModel.imageName];
+    
+    self.backView.layer.borderColor = [UIColor colorWithHexString:cellFrameModel.cellModel.borderColor].CGColor;
+    
+    if (cellFrameModel.cellModel.isSelected) {
+        self.arrowImg.image = [UIImage imageNamed:@"arrowTop"];
+        self.backView.frame = cellFrameModel.backViewFrame2;
+    }else{
+        self.arrowImg.image = [UIImage imageNamed:@"arrowdown"];
+        self.backView.frame = cellFrameModel.backViewFrame;
+    }
+    
+}
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 

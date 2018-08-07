@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>infoLab</key>
+		<string>2018年春节又要到了，支付宝又开启了扫福活动，今天是第一阶段的第一天，扫福活动，8日和11日还会开启第二阶段，今天这里介绍如何参加这个活动，有兴趣的可以看看。</string>
+		<key>isSelected</key>
+		<true/>
+		<key>titleLab</key>
+		<string>随机立减</string>
+		<key>imageName</key>
+		<string>qcq_btn_unionpay</string>
+		<key>signMode</key>
+		<string>3</string>
+		<key>borderColor</key>
+		<string>00FF7F</string>
+	</dict>
+	<dict>
+		<key>infoLab</key>
+		<string>2018年春节又要到</string>
+		<key>isSelected</key>
+		<false/>
+		<key>titleLab</key>
+		<string>满减活动</string>
+		<key>imageName</key>
+		<string>qcq_btn_zfb</string>
+		<key>signMode</key>
+		<string>4</string>
+		<key>borderColor</key>
+		<string>1E90FF</string>
+	</dict>
+	<dict>
+		<key>infoLab</key>
+		<string>这里以iPhone手机端的支付宝App作为操作截图，供参考，将支付宝App更新至最新版本。打开支付宝，进入主界面，可以看到“在一起过福年”活动入口。</string>
+		<key>isSelected</key>
+		<false/>
+		<key>titleLab</key>
+		<string>银联带你免费乘车</string>
+		<key>imageName</key>
+		<string>qcq_btn_wechat</string>
+		<key>signMode</key>
+		<string>5</string>
+		<key>borderColor</key>
+		<string>CD5555</string>
+	</dict>
+	<dict>
+		<key>infoLab</key>
+		<string>点击“去迎福气”开始正式的活动，在主界面可以看到活动的三个阶段，今天开启第一阶段扫福。</string>
+		<key>isSelected</key>
+		<false/>
+		<key>titleLab</key>
+		<string>喜迎新年</string>
+		<key>imageName</key>
+		<string>qcq_btn_bqd</string>
+		<key>signMode</key>
+		<string>6</string>
+		<key>borderColor</key>
+		<string>CD2626</string>
+	</dict>
+</array>
+</plist>

@@ -13,19 +13,17 @@
 
 @interface OpenCellViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong) UITableView * tableView;
-@property(nonatomic,strong)NSMutableArray *dataSource;
+@property(nonatomic,strong)NSMutableArray *dataSourceArr;
 @end
 
 @implementation OpenCellViewController
--(NSMutableArray *)dataSource{
-    if (!self.dataSource) {
-        self.dataSource = [NSMutableArray array];
-    }
-    return self.dataSource;
-}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.view.backgroundColor = [UIColor whiteColor];
+    self.dataSourceArr = [NSMutableArray arrayWithCapacity:0];
+    [self loadData];
+    [self setupSubviews];
     // Do any additional setup after loading the view.
 }
 - (void)setupSubviews{
@@ -47,24 +45,53 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return self.dataSource.count;
+    return self.dataSourceArr.count;
 }
 
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString * iden = @"iden";
-    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:iden];
+    CellTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:iden];
     if (!cell) {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:iden];
+        cell = [[CellTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:iden];
     }
+    CellFrameModel * model = self.dataSourceArr[indexPath.row];
+    cell.cellFrameModel = model;
+    
     return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 10;
+    CellFrameModel * frameModel = self.dataSourceArr[indexPath.row];
+    if (frameModel.cellModel.isSelected) {
+        return frameModel.expandCellHeight+20;
+    }else{
+        return frameModel.unExpandCellHeight+20;
+    }
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
+    CellFrameModel * model =self.dataSourceArr[indexPath.row];
+    model.cellModel.isSelected = !model.cellModel.isSelected;
+
+    NSIndexPath * indexPathnum = [NSIndexPath indexPathForRow:indexPath.row inSection:0];
+    NSArray<NSIndexPath *> *indexpatharr = @[indexPathnum];
+    if (model.cellModel.isSelected) {
+        [tableView reloadRowsAtIndexPaths:indexpatharr withRowAnimation:UITableViewRowAnimationTop];
+    }else
+        [tableView reloadRowsAtIndexPaths:indexpatharr withRowAnimation:UITableViewRowAnimationBottom];
+}
+- (void)loadData{
+    NSString * arrStr = [[NSBundle mainBundle] pathForResource:@"cellPlist" ofType:@"plist"];
+    NSArray * arrayay = [NSArray arrayWithContentsOfFile:arrStr];
+    NSLog(@"%@",arrayay);
+    for (NSDictionary * dic in arrayay) {
+        CellModel * model = [[CellModel alloc]init];
+        [model setValuesForKeysWithDictionary:dic];
+        CellFrameModel * modelFrame = [[CellFrameModel alloc]init];
+        modelFrame.cellModel = model;
+        [self.dataSourceArr addObject:modelFrame];
+    }
+    [self.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning {

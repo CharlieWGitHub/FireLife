@@ -10,6 +10,7 @@
 #import "Person.h"
 #import "UILabel+Extension.h"
 #import "LeftViewController.h"
+#import "OpenCellViewController.h"
 
 @interface HomePageViewController ()
 @property (nonatomic,assign) BOOL isFinish;
@@ -65,8 +66,15 @@
     
     UIBarButtonItem * left = [[UIBarButtonItem alloc]initWithTitle:@"left" style:UIBarButtonItemStyleDone target:self action:@selector(leftClicked)];
     self.navigationItem.leftBarButtonItem = left;
+    
+    UIBarButtonItem * right = [[UIBarButtonItem alloc]initWithTitle:@"right" style:UIBarButtonItemStyleDone target:self action:@selector(rightClicked)];
+    self.navigationItem.rightBarButtonItem = right;
 }
-
+- (void)rightClicked{
+    OpenCellViewController * open = [[OpenCellViewController alloc]init];
+    open.hidesBottomBarWhenPushed =YES;
+    [self.navigationController pushViewController:open animated:YES];
+}
 - (void)leftClicked{
     
     LeftViewController * left = [[LeftViewController alloc]init];

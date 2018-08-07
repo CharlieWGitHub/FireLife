@@ -84,6 +84,7 @@
 		E96F353D2118225A00FAB66C /* CellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E96F353C2118225A00FAB66C /* CellModel.m */; };
 		E96F35402118228400FAB66C /* CellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E96F353F2118228400FAB66C /* CellTableViewCell.m */; };
 		E96F35432118441500FAB66C /* CellHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = E96F35422118441500FAB66C /* CellHelp.m */; };
+		E96F354521192CB400FAB66C /* cellPlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = E96F354421192CB400FAB66C /* cellPlist.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -234,6 +235,7 @@
 		E96F353F2118228400FAB66C /* CellTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CellTableViewCell.m; sourceTree = "<group>"; };
 		E96F35412118441500FAB66C /* CellHelp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CellHelp.h; sourceTree = "<group>"; };
 		E96F35422118441500FAB66C /* CellHelp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CellHelp.m; sourceTree = "<group>"; };
+		E96F354421192CB400FAB66C /* cellPlist.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = cellPlist.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -537,6 +539,7 @@
 			isa = PBXGroup;
 			children = (
 				DFEDEE9F20E4C4AA00D2714A /* Info.plist */,
+				E96F354421192CB400FAB66C /* cellPlist.plist */,
 			);
 			path = Plist;
 			sourceTree = "<group>";
@@ -872,6 +875,7 @@
 				DF65661A20F845C500B2FE3B /* BeautifViewController.xib in Resources */,
 				DFE2EFDF20EA0E1F0098D51C /* loginBg.png in Resources */,
 				DFEDEE9920E4C4A900D2714A /* Main.storyboard in Resources */,
+				E96F354521192CB400FAB66C /* cellPlist.plist in Resources */,
 				DFF60D3520F5F67400CAAAAC /* image1.jpeg in Resources */,
 				DFD39DFF20F3039F00170B32 /* placeHold.jpeg in Resources */,
 				DFEDEF0A20E618CE00D2714A /* LiveViewController.xib in Resources */,

@@ -39,11 +39,17 @@ typedef NS_ENUM(NSUInteger, QDSignInMode) {
 /**
  签约类型
  */
-@property (nonatomic ,assign) QDSignInMode signMode;
+@property (nonatomic ,copy) NSString * signMode;
+
+/**
+ color
+ */
+@property (nonatomic ,copy) NSString * borderColor;
 
 /**
  是否显示
  */
-@property (nonatomic ,assign) BOOL isShow;
+//@property (nonatomic ,assign) BOOL isShow;
 
+-(void)setValue:(id)value forUndefinedKey:(NSString *)key;
 @end
