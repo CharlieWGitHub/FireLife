@@ -40,6 +40,7 @@
     
     self.infoLab = [[UILabel alloc]init];
     self.infoLab.font = [UIFont systemFontOfSize:15];
+    self.infoLab.textAlignment = NSTextAlignmentLeft;
     self.infoLab.numberOfLines = 0;
     [self.backView  addSubview:self.infoLab];
     
@@ -47,6 +48,15 @@
     self.arrowImg.image = [UIImage imageNamed:@"arrowdown"];
     [self.backView addSubview:self.arrowImg];
     
+    self.arrButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [self.arrButton addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
+    [self.contentView addSubview:self.arrButton];
+    
+}
+- (void)buttonClicked:(UIButton*)button{
+    if ([self.delegate respondsToSelector:@selector(opencellButtonClick:)]) {
+        [self.delegate opencellButtonClick:button.tag];
+    }
 }
 - (void)setCellFrameModel:(CellFrameModel *)cellFrameModel{
     _cellFrameModel = cellFrameModel;
@@ -55,7 +65,7 @@
     self.arrowImg.frame = cellFrameModel.arrowFrame;
     self.signImg .frame = cellFrameModel.signImgFrame;
     self.infoLab.frame  = cellFrameModel.infolabFrame;
-    
+    self.arrButton.frame = cellFrameModel.buttonFrame;
     self.titleLab.text = cellFrameModel.cellModel.titleLab;
     self.infoLab.text  = cellFrameModel.cellModel.infoLab;
     self.signImg.image = [UIImage imageNamed:cellFrameModel.cellModel.imageName];

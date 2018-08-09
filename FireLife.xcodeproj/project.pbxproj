@@ -79,6 +79,8 @@
 		E90778522111A19E00FF9EA4 /* common01_back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E90778502111A19E00FF9EA4 /* common01_back@3x.png */; };
 		E90778532111A19E00FF9EA4 /* common01_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E90778512111A19E00FF9EA4 /* common01_back@2x.png */; };
 		E90778562111AF3900FF9EA4 /* UIViewController+CustomBackButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E90778552111AF3900FF9EA4 /* UIViewController+CustomBackButton.m */; };
+		E9599387211A853B0010CC03 /* OpenCellHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9599386211A853B0010CC03 /* OpenCellHeadView.m */; };
+		E9599389211A879C0010CC03 /* OpenCellHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9599388211A879C0010CC03 /* OpenCellHeadView.xib */; };
 		E96F353321181E2F00FAB66C /* OpenCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E96F353221181E2F00FAB66C /* OpenCellViewController.m */; };
 		E96F353A2118224B00FAB66C /* CellFrameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E96F35392118224B00FAB66C /* CellFrameModel.m */; };
 		E96F353D2118225A00FAB66C /* CellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E96F353C2118225A00FAB66C /* CellModel.m */; };
@@ -225,6 +227,9 @@
 		E90778512111A19E00FF9EA4 /* common01_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "common01_back@2x.png"; sourceTree = "<group>"; };
 		E90778542111AF3900FF9EA4 /* UIViewController+CustomBackButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CustomBackButton.h"; sourceTree = "<group>"; };
 		E90778552111AF3900FF9EA4 /* UIViewController+CustomBackButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CustomBackButton.m"; sourceTree = "<group>"; };
+		E9599385211A853B0010CC03 /* OpenCellHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCellHeadView.h; sourceTree = "<group>"; };
+		E9599386211A853B0010CC03 /* OpenCellHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenCellHeadView.m; sourceTree = "<group>"; };
+		E9599388211A879C0010CC03 /* OpenCellHeadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OpenCellHeadView.xib; sourceTree = "<group>"; };
 		E96F353121181E2F00FAB66C /* OpenCellViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCellViewController.h; sourceTree = "<group>"; };
 		E96F353221181E2F00FAB66C /* OpenCellViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenCellViewController.m; sourceTree = "<group>"; };
 		E96F35382118224B00FAB66C /* CellFrameModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CellFrameModel.h; sourceTree = "<group>"; };
@@ -720,6 +725,9 @@
 			children = (
 				E96F353E2118228400FAB66C /* CellTableViewCell.h */,
 				E96F353F2118228400FAB66C /* CellTableViewCell.m */,
+				E9599385211A853B0010CC03 /* OpenCellHeadView.h */,
+				E9599386211A853B0010CC03 /* OpenCellHeadView.m */,
+				E9599388211A879C0010CC03 /* OpenCellHeadView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -871,6 +879,7 @@
 				DFF60D3220F5F67400CAAAAC /* image5.jpeg in Resources */,
 				DFF60D3A20F5F67400CAAAAC /* image4.jpeg in Resources */,
 				DFEDEE9B20E4C4AA00D2714A /* Assets.xcassets in Resources */,
+				E9599389211A879C0010CC03 /* OpenCellHeadView.xib in Resources */,
 				DFF60D3420F5F67400CAAAAC /* image6.png in Resources */,
 				DF65661A20F845C500B2FE3B /* BeautifViewController.xib in Resources */,
 				DFE2EFDF20EA0E1F0098D51C /* loginBg.png in Resources */,
@@ -977,6 +986,7 @@
 				DFEDEE9620E4C4A900D2714A /* ViewController.m in Sources */,
 				E90778562111AF3900FF9EA4 /* UIViewController+CustomBackButton.m in Sources */,
 				E96F353D2118225A00FAB66C /* CellModel.m in Sources */,
+				E9599387211A853B0010CC03 /* OpenCellHeadView.m in Sources */,
 				DFD39E0620F361D500170B32 /* PersonalHeadView.m in Sources */,
 				DF5E16182109A1060056B956 /* LeftViewController.m in Sources */,
 				DFEDEEA120E4C4AA00D2714A /* main.m in Sources */,

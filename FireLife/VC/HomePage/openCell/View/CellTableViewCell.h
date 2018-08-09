@@ -9,6 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "CellFrameModel.h"
 
+@protocol opencellDelegate<NSObject>
+
+- (void) opencellButtonClick:(NSInteger)buttonTag;
+
+@end
+
 @interface CellTableViewCell : UITableViewCell
 
 @property (nonatomic ,strong) CellFrameModel * cellFrameModel;
@@ -36,5 +42,13 @@
  箭头
  */
 @property (nonatomic ,strong) UIImageView * arrowImg;
+
+/**
+ 按钮
+ */
+@property (nonatomic ,strong) UIButton * arrButton;
+
+@property (nonatomic, weak)id<opencellDelegate> delegate; //声明协议变量
+
 
 @end

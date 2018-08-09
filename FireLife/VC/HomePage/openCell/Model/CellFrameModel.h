@@ -40,9 +40,9 @@
  */
 @property (nonatomic ,assign)CGRect signImgFrame;
 /**
- 签约渠道背景
+ 按钮
  */
-@property(nonatomic,assign)CGRect answerFrame;
+@property(nonatomic,assign)CGRect buttonFrame;
 
 
 //未展开的高度

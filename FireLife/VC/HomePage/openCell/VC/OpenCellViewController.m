@@ -10,8 +10,9 @@
 #import "CellModel.h"
 #import "CellFrameModel.h"
 #import "CellTableViewCell.h"
+#import "OpenCellHeadView.h"
 
-@interface OpenCellViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface OpenCellViewController ()<UITableViewDelegate,UITableViewDataSource,opencellDelegate>
 @property(nonatomic,strong) UITableView * tableView;
 @property(nonatomic,strong)NSMutableArray *dataSourceArr;
 @end
@@ -20,18 +21,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
+//    self.view.backgroundColor = [UIColor colorWithHexString:@"#efeef5"];
+    self.view.backgroundColor = [UIColor groupTableViewBackgroundColor];
+    
     self.dataSourceArr = [NSMutableArray arrayWithCapacity:0];
     [self loadData];
     [self setupSubviews];
     // Do any additional setup after loading the view.
 }
 - (void)setupSubviews{
-   
+    UIView * view  = [[UIView alloc]initWithFrame:CGRectMake(0, 0, lSCREEN_WIDTH, 122)];
+    [view addSubview:[OpenCellHeadView creatOpenCellView]];
     UITableView * table = [[UITableView alloc]init];
+    table.backgroundColor = [UIColor groupTableViewBackgroundColor];
     table.delegate      = self;
     table.dataSource    = self;
     table.separatorStyle = UITableViewCellSeparatorStyleNone;
+    table.tableHeaderView = view;
     [self.view addSubview:table];
     self.tableView       = table;
     [table mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -56,7 +62,9 @@
     }
     CellFrameModel * model = self.dataSourceArr[indexPath.row];
     cell.cellFrameModel = model;
-    
+    cell.arrButton.tag = indexPath.row;
+    cell.delegate = self;
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
 
@@ -70,15 +78,15 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    CellFrameModel * model =self.dataSourceArr[indexPath.row];
-    model.cellModel.isSelected = !model.cellModel.isSelected;
-
-    NSIndexPath * indexPathnum = [NSIndexPath indexPathForRow:indexPath.row inSection:0];
-    NSArray<NSIndexPath *> *indexpatharr = @[indexPathnum];
-    if (model.cellModel.isSelected) {
-        [tableView reloadRowsAtIndexPaths:indexpatharr withRowAnimation:UITableViewRowAnimationTop];
-    }else
-        [tableView reloadRowsAtIndexPaths:indexpatharr withRowAnimation:UITableViewRowAnimationBottom];
+    QDLog(@"点击的是这个");
+    //    CellFrameModel * model =self.dataSourceArr[indexPath.row];
+//    model.cellModel.isSelected = !model.cellModel.isSelected;
+//    NSIndexPath * indexPathnum = [NSIndexPath indexPathForRow:indexPath.row inSection:0];
+//    NSArray<NSIndexPath *> *indexpatharr = @[indexPathnum];
+//    if (model.cellModel.isSelected) {
+//        [tableView reloadRowsAtIndexPaths:indexpatharr withRowAnimation:UITableViewRowAnimationTop];
+//    }else
+//        [tableView reloadRowsAtIndexPaths:indexpatharr withRowAnimation:UITableViewRowAnimationBottom];
 }
 - (void)loadData{
     NSString * arrStr = [[NSBundle mainBundle] pathForResource:@"cellPlist" ofType:@"plist"];
@@ -93,7 +101,18 @@
     }
     [self.tableView reloadData];
 }
-
+- (void)opencellButtonClick:(NSInteger)buttonTag{
+    CellFrameModel * model =self.dataSourceArr[buttonTag];
+    model.cellModel.isSelected = !model.cellModel.isSelected;
+    [self.tableView reloadData];
+   
+//    NSIndexPath * indexPathnum = [NSIndexPath indexPathForRow:buttonTag inSection:0];
+//    NSArray<NSIndexPath *> *indexpatharr = @[indexPathnum];
+//    if (model.cellModel.isSelected) {
+//        [self.tableView reloadRowsAtIndexPaths:indexpatharr withRowAnimation:UITableViewRowAnimationFade];
+//    }else
+//        [self.tableView reloadRowsAtIndexPaths:indexpatharr withRowAnimation:UITableViewRowAnimationFade];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
