@@ -38,6 +38,7 @@
  标题
  */
 @property (nonatomic ,strong) UILabel * titleLab;
+
 /**
  箭头
  */

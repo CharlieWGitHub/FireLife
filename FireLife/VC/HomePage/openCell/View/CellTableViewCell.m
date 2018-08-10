@@ -24,8 +24,7 @@
 - (void)creatSubview{
    
     self.backView = [[UIView alloc]init];
-    self.backView.layer.borderColor = [[UIColor colorWithHexString:@"ooEE76" alpha:1] CGColor];
-    self.backView.layer.borderWidth = 2.0f;
+    self.backView.layer.borderWidth = 1.0f;
     self.backView.layer.cornerRadius = 5.0f;
     self.backView.layer.masksToBounds = true;
     [self.contentView addSubview:self.backView];
@@ -36,10 +35,12 @@
     
     self.titleLab = [[UILabel alloc]init];
     self.titleLab.font = [UIFont systemFontOfSize:15];
+    self.titleLab.textColor = [UIColor colorWithHexString:@"0x999999"];
     [self.backView addSubview:self.titleLab];
     
     self.infoLab = [[UILabel alloc]init];
     self.infoLab.font = [UIFont systemFontOfSize:15];
+    self.infoLab.textColor = [UIColor colorWithHexString:@"0x999999"];
     self.infoLab.textAlignment = NSTextAlignmentLeft;
     self.infoLab.numberOfLines = 0;
     [self.backView  addSubview:self.infoLab];

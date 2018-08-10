@@ -1,16 +1,14 @@
 //
-//  OpenCellHeadView.h
+//  HeadView.h
 //  FireLife
 //
-//  Created by 王成龙 on 2018/8/8.
+//  Created by 王成龙 on 2018/8/10.
 //  Copyright © 2018年 charlie. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface OpenCellHeadView : UIView
-
-+ (instancetype)creatOpenCellView;
+@interface HeadView : UIView
 
 -(instancetype)initWithFrame:(CGRect)frame;
 

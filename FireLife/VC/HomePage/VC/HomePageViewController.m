@@ -31,6 +31,19 @@
         make.width.mas_equalTo(200);
         make.height.mas_equalTo(60);
     }];
+    NSString * buttonTitle = @"单笔立减一分钱";
+    NSDictionary *attributes = @{NSFontAttributeName:[UIFont systemFontOfSize:12]};
+    CGFloat length = [buttonTitle boundingRectWithSize:CGSizeMake(320, 2000) options:NSStringDrawingUsesLineFragmentOrigin attributes:attributes context:nil].size.width;
+
+    UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.titleLabel.adjustsFontSizeToFitWidth = YES;
+    button.layer.cornerRadius = 5;
+    button.layer.borderColor = [UIColor redColor].CGColor;
+    button.layer.borderWidth = 2.0f;
+    button.frame = CGRectMake(100, 200, length+40, 30);
+    [button setTitle:buttonTitle forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    [self.view addSubview:button];
     
 }
 - (void) creatTime{
@@ -64,11 +77,12 @@
     [self creatView];
 //    [self creatTime];
     
-//    UIBarButtonItem * left = [[UIBarButtonItem alloc]initWithTitle:@"left" style:UIBarButtonItemStyleDone target:self action:@selector(leftClicked)];
-//    self.navigationItem.leftBarButtonItem = left;
+    UIBarButtonItem * left = [[UIBarButtonItem alloc]initWithTitle:@"left" style:UIBarButtonItemStyleDone target:self action:@selector(leftClicked)];
+    self.navigationItem.leftBarButtonItem = left;
     
     UIBarButtonItem * right = [[UIBarButtonItem alloc]initWithTitle:@"right" style:UIBarButtonItemStyleDone target:self action:@selector(rightClicked)];
     self.navigationItem.rightBarButtonItem = right;
+    
 }
 - (void)rightClicked{
     OpenCellViewController * open = [[OpenCellViewController alloc]init];

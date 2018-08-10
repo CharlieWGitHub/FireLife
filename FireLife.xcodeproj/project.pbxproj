@@ -81,6 +81,12 @@
 		E90778562111AF3900FF9EA4 /* UIViewController+CustomBackButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E90778552111AF3900FF9EA4 /* UIViewController+CustomBackButton.m */; };
 		E9599387211A853B0010CC03 /* OpenCellHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9599386211A853B0010CC03 /* OpenCellHeadView.m */; };
 		E9599389211A879C0010CC03 /* OpenCellHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9599388211A879C0010CC03 /* OpenCellHeadView.xib */; };
+		E959938C211D21CB0010CC03 /* HeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = E959938B211D21CB0010CC03 /* HeadView.m */; };
+		E959938E211D21DD0010CC03 /* HeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E959938D211D21DD0010CC03 /* HeadView.xib */; };
+		E9599392211D82E80010CC03 /* QDNewPayTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9599391211D82E80010CC03 /* QDNewPayTableViewCell.m */; };
+		E9599395211D85C30010CC03 /* PayFrameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9599394211D85C30010CC03 /* PayFrameModel.m */; };
+		E9599398211D85DF0010CC03 /* PayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9599397211D85DF0010CC03 /* PayModel.m */; };
+		E959939A211D8C530010CC03 /* PayList.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9599399211D8C530010CC03 /* PayList.plist */; };
 		E96F353321181E2F00FAB66C /* OpenCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E96F353221181E2F00FAB66C /* OpenCellViewController.m */; };
 		E96F353A2118224B00FAB66C /* CellFrameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E96F35392118224B00FAB66C /* CellFrameModel.m */; };
 		E96F353D2118225A00FAB66C /* CellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E96F353C2118225A00FAB66C /* CellModel.m */; };
@@ -230,6 +236,16 @@
 		E9599385211A853B0010CC03 /* OpenCellHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCellHeadView.h; sourceTree = "<group>"; };
 		E9599386211A853B0010CC03 /* OpenCellHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenCellHeadView.m; sourceTree = "<group>"; };
 		E9599388211A879C0010CC03 /* OpenCellHeadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OpenCellHeadView.xib; sourceTree = "<group>"; };
+		E959938A211D21CB0010CC03 /* HeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeadView.h; sourceTree = "<group>"; };
+		E959938B211D21CB0010CC03 /* HeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeadView.m; sourceTree = "<group>"; };
+		E959938D211D21DD0010CC03 /* HeadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeadView.xib; sourceTree = "<group>"; };
+		E9599390211D82E80010CC03 /* QDNewPayTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDNewPayTableViewCell.h; sourceTree = "<group>"; };
+		E9599391211D82E80010CC03 /* QDNewPayTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QDNewPayTableViewCell.m; sourceTree = "<group>"; };
+		E9599393211D85C30010CC03 /* PayFrameModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PayFrameModel.h; sourceTree = "<group>"; };
+		E9599394211D85C30010CC03 /* PayFrameModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PayFrameModel.m; sourceTree = "<group>"; };
+		E9599396211D85DF0010CC03 /* PayModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PayModel.h; sourceTree = "<group>"; };
+		E9599397211D85DF0010CC03 /* PayModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PayModel.m; sourceTree = "<group>"; };
+		E9599399211D8C530010CC03 /* PayList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PayList.plist; sourceTree = "<group>"; };
 		E96F353121181E2F00FAB66C /* OpenCellViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCellViewController.h; sourceTree = "<group>"; };
 		E96F353221181E2F00FAB66C /* OpenCellViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenCellViewController.m; sourceTree = "<group>"; };
 		E96F35382118224B00FAB66C /* CellFrameModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CellFrameModel.h; sourceTree = "<group>"; };
@@ -545,6 +561,7 @@
 			children = (
 				DFEDEE9F20E4C4AA00D2714A /* Info.plist */,
 				E96F354421192CB400FAB66C /* cellPlist.plist */,
+				E9599399211D8C530010CC03 /* PayList.plist */,
 			);
 			path = Plist;
 			sourceTree = "<group>";
@@ -690,9 +707,23 @@
 			path = AdView;
 			sourceTree = "<group>";
 		};
+		E959938F211D82870010CC03 /* payView */ = {
+			isa = PBXGroup;
+			children = (
+				E9599390211D82E80010CC03 /* QDNewPayTableViewCell.h */,
+				E9599391211D82E80010CC03 /* QDNewPayTableViewCell.m */,
+				E9599393211D85C30010CC03 /* PayFrameModel.h */,
+				E9599394211D85C30010CC03 /* PayFrameModel.m */,
+				E9599396211D85DF0010CC03 /* PayModel.h */,
+				E9599397211D85DF0010CC03 /* PayModel.m */,
+			);
+			path = payView;
+			sourceTree = "<group>";
+		};
 		E96F3534211821F600FAB66C /* openCell */ = {
 			isa = PBXGroup;
 			children = (
+				E959938F211D82870010CC03 /* payView */,
 				E96F35372118221300FAB66C /* View */,
 				E96F35362118220B00FAB66C /* Model */,
 				E96F35352118220000FAB66C /* VC */,
@@ -725,6 +756,9 @@
 			children = (
 				E96F353E2118228400FAB66C /* CellTableViewCell.h */,
 				E96F353F2118228400FAB66C /* CellTableViewCell.m */,
+				E959938A211D21CB0010CC03 /* HeadView.h */,
+				E959938B211D21CB0010CC03 /* HeadView.m */,
+				E959938D211D21DD0010CC03 /* HeadView.xib */,
 				E9599385211A853B0010CC03 /* OpenCellHeadView.h */,
 				E9599386211A853B0010CC03 /* OpenCellHeadView.m */,
 				E9599388211A879C0010CC03 /* OpenCellHeadView.xib */,
@@ -874,6 +908,7 @@
 				DFF60D3C20F5F67400CAAAAC /* image9.jpeg in Resources */,
 				E90778522111A19E00FF9EA4 /* common01_back@3x.png in Resources */,
 				DFF60D3620F5F67400CAAAAC /* image7.jpeg in Resources */,
+				E959938E211D21DD0010CC03 /* HeadView.xib in Resources */,
 				DFF60D2520F5E85D00CAAAAC /* cell_animal.png in Resources */,
 				DFD39E0820F3620300170B32 /* PersonalHeadView.xib in Resources */,
 				DFF60D3220F5F67400CAAAAC /* image5.jpeg in Resources */,
@@ -893,6 +928,7 @@
 				DF5E16192109A1060056B956 /* LeftViewController.xib in Resources */,
 				DFD39DFD20F2FE5900170B32 /* CustomCollectionViewCell.xib in Resources */,
 				DFD39E0320F337FE00170B32 /* wxpay.png in Resources */,
+				E959939A211D8C530010CC03 /* PayList.plist in Resources */,
 				E90778532111A19E00FF9EA4 /* common01_back@2x.png in Resources */,
 				DFD39E0120F337EE00170B32 /* alipay.png in Resources */,
 			);
@@ -980,10 +1016,12 @@
 				DFE2EFE620EA20A80098D51C /* UserManagerTool.m in Sources */,
 				DFEDEEFE20E4E1B800D2714A /* AdModel.m in Sources */,
 				DFEDEED820E4CE6C00D2714A /* FLTabBarView.m in Sources */,
+				E9599395211D85C30010CC03 /* PayFrameModel.m in Sources */,
 				DFEDEED520E4CE3400D2714A /* FLTabBarViewController.m in Sources */,
 				DFA7FAE72104B89400A12466 /* BeautifulHandle.m in Sources */,
 				DFF60D4020F5F8C900CAAAAC /* UIImage+Extension.m in Sources */,
 				DFEDEE9620E4C4A900D2714A /* ViewController.m in Sources */,
+				E9599392211D82E80010CC03 /* QDNewPayTableViewCell.m in Sources */,
 				E90778562111AF3900FF9EA4 /* UIViewController+CustomBackButton.m in Sources */,
 				E96F353D2118225A00FAB66C /* CellModel.m in Sources */,
 				E9599387211A853B0010CC03 /* OpenCellHeadView.m in Sources */,
@@ -997,6 +1035,7 @@
 				E96F353A2118224B00FAB66C /* CellFrameModel.m in Sources */,
 				DFEDEEF420E4DBC900D2714A /* HttpTool.m in Sources */,
 				DF5E161C2109A23C0056B956 /* FLHomeHandle.m in Sources */,
+				E9599398211D85DF0010CC03 /* PayModel.m in Sources */,
 				DFEDEEDB20E4D07A00D2714A /* FLNavigationViewController.m in Sources */,
 				DFD03810210E939F00F1CEDD /* personModel.m in Sources */,
 				E96F35432118441500FAB66C /* CellHelp.m in Sources */,
@@ -1008,6 +1047,7 @@
 				DF65661920F845C500B2FE3B /* BeautifViewController.m in Sources */,
 				DFEDEE9320E4C4A900D2714A /* AppDelegate.m in Sources */,
 				DFEDEF0D20E61ABF00D2714A /* FLExceptionHandle.m in Sources */,
+				E959938C211D21CB0010CC03 /* HeadView.m in Sources */,
 				DF4F76832106BD53009ED965 /* Person.m in Sources */,
 				DFEDEEF920E4E13000D2714A /* FLAdHandle.m in Sources */,
 				DFEDEEE220E4D68400D2714A /* SettingViewController.m in Sources */,

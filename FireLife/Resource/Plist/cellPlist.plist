@@ -6,15 +6,17 @@
 		<key>infoLab</key>
 		<string>1.0 2018年春节又要到了，支付宝又开启了扫福活动，今天是第一阶段的第一天，扫福活动 \n 20 .8日和11日还会开启第二阶段，今天这里介绍如何参加这个活动，有兴趣的可以看看。</string>
 		<key>isSelected</key>
-		<true/>
+		<false/>
 		<key>titleLab</key>
 		<string>随机立减</string>
 		<key>imageName</key>
 		<string>qcq_btn_unionpay</string>
 		<key>signMode</key>
-		<string>3</string>
+		<integer>3</integer>
 		<key>borderColor</key>
-		<string>00FF7F</string>
+		<string>1E9E52</string>
+		<key>isShow</key>
+		<true/>
 	</dict>
 	<dict>
 		<key>infoLab</key>
@@ -26,9 +28,11 @@
 		<key>imageName</key>
 		<string>qcq_btn_zfb</string>
 		<key>signMode</key>
-		<string>4</string>
+		<integer>4</integer>
 		<key>borderColor</key>
-		<string>1E90FF</string>
+		<string>1270B8</string>
+		<key>isShow</key>
+		<true/>
 	</dict>
 	<dict>
 		<key>infoLab</key>
@@ -40,9 +44,11 @@
 		<key>imageName</key>
 		<string>qcq_btn_wechat</string>
 		<key>signMode</key>
-		<string>5</string>
+		<integer>5</integer>
 		<key>borderColor</key>
-		<string>CD5555</string>
+		<string>C22937</string>
+		<key>isShow</key>
+		<true/>
 	</dict>
 	<dict>
 		<key>infoLab</key>
@@ -54,9 +60,11 @@
 		<key>imageName</key>
 		<string>qcq_btn_bqd</string>
 		<key>signMode</key>
-		<string>6</string>
+		<integer>6</integer>
 		<key>borderColor</key>
 		<string>CD2626</string>
+		<key>isShow</key>
+		<true/>
 	</dict>
 </array>
 </plist>

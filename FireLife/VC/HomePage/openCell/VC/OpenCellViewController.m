@@ -11,6 +11,7 @@
 #import "CellFrameModel.h"
 #import "CellTableViewCell.h"
 #import "OpenCellHeadView.h"
+#import "HeadView.h"
 
 @interface OpenCellViewController ()<UITableViewDelegate,UITableViewDataSource,opencellDelegate>
 @property(nonatomic,strong) UITableView * tableView;
@@ -30,8 +31,8 @@
     // Do any additional setup after loading the view.
 }
 - (void)setupSubviews{
-    UIView * view  = [[UIView alloc]initWithFrame:CGRectMake(0, 0, lSCREEN_WIDTH, 122)];
-    [view addSubview:[OpenCellHeadView creatOpenCellView]];
+    
+    UIView * view  = [[OpenCellHeadView alloc]initWithFrame:CGRectMake(0, 0, lSCREEN_WIDTH, 120)];
     UITableView * table = [[UITableView alloc]init];
     table.backgroundColor = [UIColor groupTableViewBackgroundColor];
     table.delegate      = self;
@@ -43,7 +44,6 @@
     [table mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.view);
     }];
-    
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -78,8 +78,11 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    QDLog(@"点击的是这个");
-    //    CellFrameModel * model =self.dataSourceArr[indexPath.row];
+  
+    CellFrameModel * model =self.dataSourceArr[indexPath.row];
+  
+    QDLog(@"点击的是这个%lu",(unsigned long)model.cellModel.signMode);
+
 //    model.cellModel.isSelected = !model.cellModel.isSelected;
 //    NSIndexPath * indexPathnum = [NSIndexPath indexPathForRow:indexPath.row inSection:0];
 //    NSArray<NSIndexPath *> *indexpatharr = @[indexPathnum];
