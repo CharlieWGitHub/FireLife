@@ -8,35 +8,41 @@
 		<key>activity</key>
 		<string>单笔立减</string>
 		<key>info</key>
-		<string>1.每人每天最高享受1折优惠 \n 2.最高享1分钱优惠</string>
+		<string>1.每人每天最高享受1折优惠.最高享1分钱优惠快快行动起来下载青岛地铁APP</string>
 		<key>payMode</key>
 		<integer>4</integer>
 		<key>isSelected</key>
+		<true/>
+		<key>isShow</key>
 		<false/>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>支付宝支付</string>
 		<key>activity</key>
-		<string>单笔满额立减</string>
+		<string>随机减</string>
 		<key>info</key>
 		<string>1.支付宝满10块就减半优惠</string>
 		<key>payMode</key>
 		<integer>3</integer>
 		<key>isSelected</key>
 		<false/>
+		<key>isShow</key>
+		<false/>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>银联支付</string>
 		<key>activity</key>
-		<string>优惠</string>
+		<string>8月巨惠活动 </string>
 		<key>info</key>
 		<string>1.使用银联支付可以获取随机优惠</string>
 		<key>payMode</key>
 		<integer>5</integer>
 		<key>isSelected</key>
-		<true/>
+		<false/>
+		<key>isShow</key>
+		<false/>
 	</dict>
 </array>
 </plist>

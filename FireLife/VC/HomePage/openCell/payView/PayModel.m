@@ -9,5 +9,9 @@
 #import "PayModel.h"
 
 @implementation PayModel
+-(void)setValue:(id)value forUndefinedKey:(NSString *)key
+{
+    
+}
 
 @end

@@ -7,9 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PayFrameModel.h"
+@protocol payMethodSelectlDelegate<NSObject>
+
+- (void) payButtonClick:(NSInteger)buttonTag;
+
+@end
 
 @interface QDNewPayTableViewCell : UITableViewCell
 
+@property (nonatomic ,strong)PayFrameModel *payFrameModel;
 /**
  分割线
  */
@@ -39,6 +46,13 @@
  活动具体内容
  */
 @property (nonatomic ,strong) UILabel * infoLab;
+
+/**
+ 底部的line
+ */
+@property (nonatomic ,strong) UIImageView *bottomImage;
+
+@property (nonatomic, weak)id<payMethodSelectlDelegate> delegate;
 
 
 @end

@@ -81,8 +81,6 @@
 		E90778562111AF3900FF9EA4 /* UIViewController+CustomBackButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E90778552111AF3900FF9EA4 /* UIViewController+CustomBackButton.m */; };
 		E9599387211A853B0010CC03 /* OpenCellHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9599386211A853B0010CC03 /* OpenCellHeadView.m */; };
 		E9599389211A879C0010CC03 /* OpenCellHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9599388211A879C0010CC03 /* OpenCellHeadView.xib */; };
-		E959938C211D21CB0010CC03 /* HeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = E959938B211D21CB0010CC03 /* HeadView.m */; };
-		E959938E211D21DD0010CC03 /* HeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E959938D211D21DD0010CC03 /* HeadView.xib */; };
 		E9599392211D82E80010CC03 /* QDNewPayTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9599391211D82E80010CC03 /* QDNewPayTableViewCell.m */; };
 		E9599395211D85C30010CC03 /* PayFrameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9599394211D85C30010CC03 /* PayFrameModel.m */; };
 		E9599398211D85DF0010CC03 /* PayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9599397211D85DF0010CC03 /* PayModel.m */; };
@@ -236,9 +234,6 @@
 		E9599385211A853B0010CC03 /* OpenCellHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCellHeadView.h; sourceTree = "<group>"; };
 		E9599386211A853B0010CC03 /* OpenCellHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenCellHeadView.m; sourceTree = "<group>"; };
 		E9599388211A879C0010CC03 /* OpenCellHeadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OpenCellHeadView.xib; sourceTree = "<group>"; };
-		E959938A211D21CB0010CC03 /* HeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeadView.h; sourceTree = "<group>"; };
-		E959938B211D21CB0010CC03 /* HeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeadView.m; sourceTree = "<group>"; };
-		E959938D211D21DD0010CC03 /* HeadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeadView.xib; sourceTree = "<group>"; };
 		E9599390211D82E80010CC03 /* QDNewPayTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDNewPayTableViewCell.h; sourceTree = "<group>"; };
 		E9599391211D82E80010CC03 /* QDNewPayTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QDNewPayTableViewCell.m; sourceTree = "<group>"; };
 		E9599393211D85C30010CC03 /* PayFrameModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PayFrameModel.h; sourceTree = "<group>"; };
@@ -756,9 +751,6 @@
 			children = (
 				E96F353E2118228400FAB66C /* CellTableViewCell.h */,
 				E96F353F2118228400FAB66C /* CellTableViewCell.m */,
-				E959938A211D21CB0010CC03 /* HeadView.h */,
-				E959938B211D21CB0010CC03 /* HeadView.m */,
-				E959938D211D21DD0010CC03 /* HeadView.xib */,
 				E9599385211A853B0010CC03 /* OpenCellHeadView.h */,
 				E9599386211A853B0010CC03 /* OpenCellHeadView.m */,
 				E9599388211A879C0010CC03 /* OpenCellHeadView.xib */,
@@ -908,7 +900,6 @@
 				DFF60D3C20F5F67400CAAAAC /* image9.jpeg in Resources */,
 				E90778522111A19E00FF9EA4 /* common01_back@3x.png in Resources */,
 				DFF60D3620F5F67400CAAAAC /* image7.jpeg in Resources */,
-				E959938E211D21DD0010CC03 /* HeadView.xib in Resources */,
 				DFF60D2520F5E85D00CAAAAC /* cell_animal.png in Resources */,
 				DFD39E0820F3620300170B32 /* PersonalHeadView.xib in Resources */,
 				DFF60D3220F5F67400CAAAAC /* image5.jpeg in Resources */,
@@ -1047,7 +1038,6 @@
 				DF65661920F845C500B2FE3B /* BeautifViewController.m in Sources */,
 				DFEDEE9320E4C4A900D2714A /* AppDelegate.m in Sources */,
 				DFEDEF0D20E61ABF00D2714A /* FLExceptionHandle.m in Sources */,
-				E959938C211D21CB0010CC03 /* HeadView.m in Sources */,
 				DF4F76832106BD53009ED965 /* Person.m in Sources */,
 				DFEDEEF920E4E13000D2714A /* FLAdHandle.m in Sources */,
 				DFEDEEE220E4D68400D2714A /* SettingViewController.m in Sources */,

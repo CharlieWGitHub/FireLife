@@ -31,10 +31,10 @@
         self.infolabFrame = CGRectMake(10, cheight + 35, cwidth-20, infoH);
         //  展开的高度
         self.expandCellHeight = cheight + 30 + infoH +20;
-        
         self.backViewFrame = CGRectMake(20, 20, cwidth, cheight + 35);
         self.backViewFrame2 = CGRectMake(20, 20, cwidth, cheight +35 + infoH + 10);
     }else{
+        
         self.signImgFrame = CGRectMake(0, 0, cwidth, cheight);
         self.unExpandCellHeight = cheight+10;
         self.backViewFrame = CGRectMake(20, 20, cwidth, cheight);

@@ -7,9 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "PayModel.h"
 
 @interface PayFrameModel : NSObject
-
 /**
  支付渠道的图标的位置
  */
@@ -39,5 +40,17 @@
  活动内容的位置
  */
 @property (nonatomic ,assign) CGRect infoLabFrame;
+/**
+ 底部分割线
+ */
+@property (nonatomic ,assign) CGRect bottomLineFrame;
+@property (nonatomic ,assign) CGRect unBottomLineFrame;
+
+/**未展开的高度*/
+@property(nonatomic,assign)CGFloat unExpandCellHeight;
+/**展开的高度*/
+@property(nonatomic,assign)CGFloat expandCellHeight;
+
+@property (nonatomic ,strong)PayModel * payModel;
 
 @end

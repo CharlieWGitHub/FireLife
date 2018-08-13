@@ -8,11 +8,11 @@
 
 #import <Foundation/Foundation.h>
 //签约类型
-typedef NS_ENUM(NSUInteger, QDpayMode) {
-    QDSignInModeAli    = 3, //支付宝
-    QDSignInModeWX     = 4, //微信
-    QDSignInModeUnion  = 5, //银联
-    QDSignInModeQDBank = 6  //青岛银行
+typedef NS_ENUM(NSUInteger, QDpaySignMode) {
+    QDPaySignInModeAli    = 3, //支付宝
+    QDPaySignInModeWX     = 4, //微信
+    QDPaySignInModeUnion  = 5, //银联
+    QDPaySignInModeQDBank = 6  //青岛银行
     
 };
 @interface PayModel : NSObject
@@ -35,11 +35,18 @@ typedef NS_ENUM(NSUInteger, QDpayMode) {
 /**
  支付渠道
  */
-@property (nonatomic ,assign)QDpayMode payMode;
+@property (nonatomic ,assign)QDpaySignMode payMode;
 
 /**
  是否默认选中
  */
 @property (nonatomic ,assign) BOOL isSelected;
+
+/**
+ 是否展示
+ */
+@property (nonatomic ,assign) BOOL isShow;
+
+-(void)setValue:(id)value forUndefinedKey:(NSString *)key;
 
 @end
